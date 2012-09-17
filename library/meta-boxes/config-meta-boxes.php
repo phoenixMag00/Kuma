@@ -146,64 +146,7 @@ $meta_boxes[] = array(
 	
 );
 
-// 3rd meta box
-$meta_boxes[] = array(
-	'id'    => 'survey',
-	'title' => 'Survey',
-	'pages' => array( 'nowhere' ),
 
-	'fields' => array(
-		// COLOR
-		array(
-			'name' => 'Your favorite color',
-			'id'   => "{$prefix}color",
-			'type' => 'color',
-		),
-		// CHECKBOX LIST
-		array(
-			'name' => 'Your hobby',
-			'id'   => "{$prefix}hobby",
-			'type' => 'checkbox_list',
-			// Options of checkboxes, in format 'value' => 'Label'
-			'options' => array(
-				'reading' => 'Books',
-				'sport'   => 'Gym, Boxing',
-			),
-			'desc' => 'What do you do in free time?',
-		),
-		// TIME
-		array(
-			'name' => 'When do you get up?',
-			'id'   => "{$prefix}getdown",
-			'type' => 'time',
-			// Time format, default hh:mm. Optional. @link See: http://goo.gl/hXHWz
-			'format' => 'hh:mm:ss',
-		),
-		// DATETIME
-		array(
-			'name' => 'When were you born?',
-			'id'   => "{$prefix}born_time",
-			'type' => 'datetime',
-			// Time format, default yy-mm-dd hh:mm. Optional. @link See: http://goo.gl/hXHWz
-			'format' => 'hh:mm:ss',
-		),
-		// TAXONOMY
-		array(
-			'name'    => 'Categories',
-			'id'      => "{$prefix}cats",
-			'type'    => 'taxonomy',
-			'options' => array(
-				// Taxonomy name
-				'taxonomy' => 'category',
-				// How to show taxonomy: 'checkbox_list' (default) or 'checkbox_tree', 'select_tree' or 'select'. Optional
-				'type' => 'select_tree',
-				// Additional arguments for get_terms() function. Optional
-				'args' => array()
-			),
-			'desc' => 'Choose One Category',
-		),
-	)
-);
 
 
 /********************* META BOX REGISTERING ***********************/

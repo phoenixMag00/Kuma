@@ -64,14 +64,14 @@ function theme_options_do_page() {
 					<tr valign="top"><th scope="row"><?php _e( 'Enable Homepage Slider', 'kumatheme' ); ?></th>
 						<td>
 							<input id="kuma_theme_options[option3]" name="kuma_theme_options[homepageslider]" type="checkbox" value="1" <?php checked( '1', (isset($options['homepageslider'])) ); ?> />
-							<label class="description" for="kuma_theme_options[homepageslider]"><?php _e( 'Enable the Homepage Slider. Needs more documentaiton	', 'kumatheme' ); ?></label>
+							<label class="description" for="kuma_theme_options[homepageslider]"><?php _e( 'Enable the Homepage Slider. Needs Documentation.	', 'kumatheme' ); ?></label>
 						</td>
 					</tr>
 					
 					<tr valign="top"><th scope="row"><?php _e( 'Enable Faculty and Staff Listing', 'kumatheme' ); ?></th>
 						<td>
 							<input id="kuma_theme_options[option4]" name="kuma_theme_options[facstafflisting]" type="checkbox" value="1" <?php checked( '1', (isset($options['facstafflisting'])) ); ?> />
-							<label class="description" for="kuma_theme_options[facstafflisting]"><?php _e( 'Enable Faculty and Staff Listings', 'kumatheme' ); ?></label>
+							<label class="description" for="kuma_theme_options[facstafflisting]"><?php _e( 'Enable Faculty and Staff Listings. Needs Documentation.', 'kumatheme' ); ?></label>
 						</td>
 					</tr>
 				
@@ -136,7 +136,17 @@ function theme_options_do_page() {
 			<p class="submit">
 				<input type="submit" class="button-primary" value="<?php _e( 'Save Options', 'kumatheme' ); ?>" />
 			</p>
+		
+		<table class="form-table">
+			
+				<h3>Kuma Credits</h3>
+				
+					<p>Make sure to add links and props to certain people.</p>
+			
+			</table>
+		
 		</form>
+	
 	</div>
 	<?php
 }
