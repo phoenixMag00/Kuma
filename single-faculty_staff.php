@@ -70,7 +70,7 @@
 					
 					<?php else: ?>
 					
-						<p>No Email Provided</p>
+						<p>Email: Not Provided</p>
 					
 					<?php endif; ?>
 					

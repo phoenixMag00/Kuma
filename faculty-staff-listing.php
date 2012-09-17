@@ -73,7 +73,7 @@ Template Name: Faculty Staff Listing
 					
 					<?php else: ?>
 					
-						<p>Email: Not Provided</p>
+						<p>No Email Provided</p>
 					
 					<?php endif; ?>
 					
