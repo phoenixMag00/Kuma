@@ -1,0 +1,125 @@
+/*
+Skin Name: Kuma Slider Default Theme
+Description: The default skin for the Kuma WordPress Theme
+Version: 1
+Designer: Wendy Chang | Developer: Will Rees
+Supports Thumbs: true
+*/
+.slider-wrapper {
+    position: relative;
+    padding: 9px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background: #fcfbfb;
+    margin-top: 10px;
+    max-width: 932px;
+    min-height: 312px;
+    max-height: 312px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    box-shadow: 0px 1px 5px 0px #4a4a4a;
+}
+.kuma-theme {
+    position: relative;
+    background: #fcfbfb url(../images/slider/loading.gif) no-repeat 50% 50%;
+}
+.kuma-theme h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-shadow: -1px 1px 1px #ffffff;
+}
+.kuma-theme h2 a {
+    color: #3a3e40;
+    text-decoration: none;
+}
+.kuma-theme h2 a:hover,
+.kuma-theme h2 a:focus { color: #E86411 !important }
+.kuma-theme p a {
+    color: #E86411;
+    text-decoration: none;
+}
+.kuma-theme p a:hover {
+    color: #E86411 !important;
+    text-decoration: underline;
+}
+.kuma-theme img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+    min-width: 696px;
+    min-height: 312px;
+    max-width: 696px;
+    max-height: 312px;
+}
+.kuma-theme  a {
+    border: 0;
+    display: block;
+}
+.nivo-controlNav {
+    position: absolute;
+    right: 17px;
+    bottom: 13px;
+    z-index: 1000;
+    text-align: center;
+    padding: 0 0 !important;
+}
+.nivo-controlNav a {
+    display: inline-block;
+    width: 10px;
+    height: 11px;
+    background: url(../images/slider/homepage-slider-bullet-sprite-10-27.png) center top no-repeat;
+    text-indent: -9999px;
+    border: 0;
+    margin: 0 2px;
+}
+.nivo-controlNav a.active { background-position: center bottom }
+.kuma-theme .nivo-directionNav a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../images/slider/arrows.png) no-repeat;
+    text-indent: -9999px;
+    border: 0;
+    opacity: 0;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.kuma-theme:hover .nivo-directionNav a { opacity: 1 }
+.kuma-theme a.nivo-nextNav {
+    background-position: -30px 0;
+    right: 236px;
+}
+.kuma-theme a.nivo-prevNav { left: 15px }
+.kuma-theme .nivo-caption { font-family: Helvetica, Arial, sans-serif }
+.kuma-theme.nivo-caption a {
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+}
+.kuma-theme .nivo-caption a:hover { color: #fff }
+.kuma-theme .nivo-controlNav.nivo-thumbs-enabled { width: 100% }
+.kuma-theme .nivo-controlNav.nivo-thumbs-enabled a {
+    width: auto;
+    height: auto;
+    background: none;
+    margin-bottom: 5px;
+}
+.kuma-theme .nivo-controlNav.nivo-thumbs-enabled img {
+    display: block;
+    width: 120px;
+    height: auto;
+}
+/* Media Queries for HiDPI displays (ratio equal to or greater than 1.3) */
+@media only screen and (-moz-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3) { 
+.nivo-controlNav a {
+    background: url(../images/slider/homepage-slider-bullet-sprite-20-52@2x.png) center top no-repeat;
+    background-position: center bottom;
+    background-size: 10px 27px;
+}
+.nivo-controlNav a.active { background-position: center top }
+}

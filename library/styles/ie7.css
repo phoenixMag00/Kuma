@@ -1,0 +1,8 @@
+.nivo-caption { width: 190px }
+#footer-left {
+    padding-top: 5px;
+    float: left;
+    display: block;
+    width: 700px;
+}
+#footer-right { padding-top: 5px }
