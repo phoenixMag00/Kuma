@@ -68,6 +68,10 @@
 					
 						<p>Email: <a href="<?php echo $email ?>"><?php echo $email ?></a></p>
 					
+					<?php else: ?>
+					
+						<p>No Email Provided</p>
+					
 					<?php endif; ?>
 					
 					<?php if (trim($phone_number[1]) != '') : ?>

@@ -86,6 +86,10 @@
 					
 						<p>Email: <a href="mailto:<?php echo $email ?>"><?php echo $email ?></a></p>
 					
+					<?php else: ?>
+					
+						<p>Email: Not Provided</p>
+					
 					<?php endif; ?>
 					
 					<?php if (trim($phone_number[1]) != '') : ?>

@@ -66,7 +66,6 @@ Template Name: Faculty Staff Listing
 				<?php endif; ?>
 				
 				<div class="faculty-staff-meta">
-			
 					
 					<?php if (trim($email[1]) != '') : ?>
 					
@@ -74,7 +73,7 @@ Template Name: Faculty Staff Listing
 					
 					<?php else: ?>
 					
-						<p>No Email Provided</p>
+						<p>Email: Not Provided</p>
 					
 					<?php endif; ?>
 					
