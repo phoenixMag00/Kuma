@@ -509,7 +509,7 @@ body .section-container {
 .text-box ul {
     list-style-type: square;
     color: #5d5d5d;
-    margin: 0 7px 7px 20px !important;
+    margin: 0 7px 7px 25px !important;
     width: 90% !important;
 }
 .text-box ul ul { margin-left: 5% !important }
