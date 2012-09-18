@@ -2,7 +2,26 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
-<title><?php if (is_page_template('homepage.php')) : ?><?php bloginfo('name'); ?><?php endif; ?><?php if (!( is_home() || is_front_page() )) : ?><?php wp_title("",true); ?><?php endif; ?> - George Mason University</title>
+<title><?php
+	/*
+	 * Print the <title> tag based on what is being viewed.
+	 */
+	global $page, $paged;
+
+	wp_title( '|', true, 'right' );
+
+	// Add the blog name.
+	bloginfo( 'name' );
+
+	// Add the blog description for the home/front page.
+	$site_description = get_bloginfo( 'description', 'display' );
+	if ( $site_description && ( is_home() || is_front_page() ) )
+		echo " | $site_description";
+
+	// Add a page number if necessary:
+	if ( $paged >= 2 || $page >= 2 )
+		echo ' | ' . sprintf( __( 'Page %s', 'twentyeleven' ), max( $paged, $page ) );
+?> | George Mason University</title>
 <link rel="shortcut icon" type="image/x-icon" href="http://gmu.edu/favicon.ico" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css" />
