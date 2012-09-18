@@ -350,8 +350,10 @@ body .section-container {
     font-size: 1.4em;
 }
 #content-left ul {
-    margin: 0 0 15px 30px;
+    margin: 0 0 15px 0;
     width: 80%;
+    position: relative;
+    left: 35px;
 }
 #content-left ul li {
     color: #383838;
@@ -366,7 +368,7 @@ body .section-container {
 #content-left li a:focus { text-decoration: underline }
 .attachment-single-page-featured {
     float: left;
-    margin-right: 10px;
+    margin-right: 25px;
     padding: 5px;
     background-color: #fff;
     border: 1px solid #b3b3b3 !important;
