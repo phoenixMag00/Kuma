@@ -34,10 +34,11 @@
 <!--[if IE 7]>
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/styles/ie7.css" type="text/css" media="screen" />
 <![endif]--> 
+<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 
 <div id="wrapper">
 
@@ -49,7 +50,7 @@
 		
 			<h1><a href="http://gmu.edu" id="mason-logo" class="text-swap">George Mason University</a></h1>
 			
-				<h2><a href="<?php bloginfo('url'); ?>" id="site-name"><?php bloginfo('name'); ?></a></h2>
+				<h2><a href="<?php echo home_url() ?>" id="site-name"><?php bloginfo('name'); ?></a></h2>
 				
 					<?php $options = get_option('kuma_theme_options'); if (isset($options['search'])) : ?>
    				

@@ -375,6 +375,118 @@ body .section-container {
     -webkit-box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, .2);
     box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, .2);
 }
+#comments {
+    clear: both;
+    max-width: 750px;
+    margin-left: 10px;
+}
+#comments h3 {
+    margin-top: 15px;
+    padding-top: 15px;
+    color: #333;
+    font-size: 1.4em;
+    padding-top: 15px;
+    width: 100%;
+    border-top: 2px solid #ccc;
+}
+/* Begin Comments*/
+.commentlist {
+    padding: 0;
+    text-align: justify;
+}
+.commentlist .comment {
+    margin: 10px 0 0;
+    padding: 10px 10px 1px 10px;
+    list-style: none;
+}
+.comment-author { padding-bottom: 2px }
+.commentlist .comment-meta {
+    color: #666;
+    font-style: italic;
+    padding-bottom: 6px;
+}
+.commentlist .reply {
+
+}
+.commentlist p {
+    margin: 10px 5px 10px 0;
+    clear: both;
+}
+#commentform p { margin: 5px 0 }
+.nocomments {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.commentmetadata { margin: 0 }
+.avatar {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+.commentlist .commentname,
+.commentlist cite {
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+}
+.commentlist .commentname,
+.commentlist .commentmod,
+.commentlist .commentmetadata { margin: 0 }
+.even { background-color: #f3f3f3 }
+.alt { background-color: #fbfbfb }
+.paginate-comments {
+    margin-top: 20px;
+    text-align: center;
+}
+#respond { padding: 10px }
+#commentform .comment-notes { margin-bottom: 15px }
+#commentform .comment-form-author,
+#commentform .comment-form-email,
+#commentform .comment-form-url {
+    position: relative;
+    display: block;
+    clear: both;
+    height: 33px;
+    line-height: 33px;
+    margin-bottom: 15px;
+}
+#commentform .comment-form-comment { position: relative }
+.comment-form-author label,
+.comment-form-email label,
+.comment-form-url label {
+
+}
+.required { color: red }
+.comment-form-author input,
+.comment-form-email input,
+.comment-form-url input,
+.comment-form-comment textarea {
+    position: absolute;
+    left: 70px;
+}
+.comment-form-comment { height: 130px }
+.comment-form-comment #comment {
+    width: 450px;
+    height: 100px;
+}
+#commentform code { margin: 15px 10px }
+#reply-title {
+    border-top: none !important;
+    margin-top: 0 !important;
+}
+#commentform input[type=text],
+#comment,
+#submit {
+    border: 2px solid #ccc;
+    padding: 6px 4px;
+    font-size: 13px;
+}
+#submit {
+    background: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+}
+/* End Comments */
 .date-and-time {
     margin-top: 0;
     margin-bottom: 9px !important;
@@ -407,11 +519,20 @@ body .section-container {
     margin: 10px;
     min-height: 200px;
 }
-.faculty-staff-index p {text-align: center; width: 100%;}
-.faculty-staff-index img {margin-bottom: 0 !important; float: none !important; display: block; margin: 0 auto 0 auto !important;}
+.faculty-staff-index p {
+    text-align: center;
+    width: 100%;
+}
+.faculty-staff-index img {
+    margin-bottom: 0 !important;
+    float: none !important;
+    display: block;
+    margin: 0 auto 0 auto !important;
+}
 #employee-types {
     margin-top: 15px !important;
     margin-left: 5px !important;
+    left: 0 !important;
 }
 #employee-types li { display: inline }
 #employee-types li a {
@@ -428,11 +549,13 @@ body .section-container {
     -webkit-box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, .2);
     box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, .2);
 }
-.faculty-staff-meta {
-    margin-top: 10px;
+.faculty-staff-meta { margin-top: 10px }
+.faculty-staff-meta-single {
+    margin-left: 20px;
+    float: left;
+    font-weight: bold;
 }
-.faculty-staff-meta-single {margin-left: 20px; float: left; font-weight: bold; }
-.faculty-staff-meta-single p {margin: 8px 0 !important;}
+.faculty-staff-meta-single p { margin: 8px 0 !important }
 .faculty-staff-meta p {
     font-weight: bold;
     margin: 0 !important;
@@ -464,8 +587,10 @@ body .section-container {
     margin-top: 5px;
     padding: 5px 10px 10px;
 }
-.tan-title { font-family: Oswald, Arial, sans-serif;
-    font-weight: 300 !important;;
+.tan-title {
+    font-family: Oswald, Arial, sans-serif;
+    font-weight: 300 !important;
+    : ;
     font-size: 1.5em !important;
     background-color: #d7d6ce;
     padding: 5px;
@@ -474,10 +599,9 @@ body .section-container {
     display: table-cell !important;
     vertical-align: middle;
     width: 300px;
-
 }
-.tan-title + .tan-arrow {margin-bottom: 10px;}
-.tan-title a {font-size: 1.4em !important;}
+.tan-title + .tan-arrow { margin-bottom: 10px }
+.tan-title a { font-size: 1.4em !important }
 .tan-arrow {
     background: url(../images/content-right-tan-down-arrow-29-15.png) no-repeat;
     background-position: 30px 0;

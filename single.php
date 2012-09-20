@@ -50,10 +50,18 @@
 	    			<?php endif; ?>
     			
 	    					<?php the_content(); ?>
+	    			
+	    						
 		
 		</div>
- 
-    <?php endwhile; else: ?>
+			
+			<?php $options = get_option('kuma_theme_options'); if (isset($options['postcomments'])) : ?>
+			
+				<?php comments_template(); ?>
+			
+			<?php endif; ?>
+		
+	<?php endwhile; else: ?>
 
     	<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 

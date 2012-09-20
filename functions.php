@@ -267,6 +267,31 @@ register_sidebar(array(
      
 }
 
+// Let's format the whole comment process (must use style=div as an arg the wp_list_comments function)
+function comment_format($comment, $args, $depth) {
+   $GLOBALS['comment'] = $comment; ?>
+   <div <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
+     <div id="comment-<?php comment_ID(); ?>">
+      
+      <div class="comment-author vcard">
+         <?php echo get_avatar($comment,$size='48',$default='<path_to_url>', $alt='Gravatar Image for '. get_comment_author('').'' ); ?>
+ 
+			
+		<div class="comment-meta commentmetadata"><?php printf(__('%1$s at %2$s'), get_comment_date(),  get_comment_time()) ?><?php edit_comment_link(__('(Edit)'),'  ','') ?></div>		
+	
+         <?php printf(__('<cite class="fn">%s</cite> <span class="says">writes:</span>'), get_comment_author_link()) ?>
+      </div>
+      <?php if ($comment->comment_approved == '0') : ?>
+         <em><?php _e('Your comment is awaiting moderation.') ?></em>
+         <br />
+      <?php endif; ?>
+
+      <?php comment_text() ?>
+     
+     </div>
+<?php
+        }
+
 
 //Bring the Custom Post
 add_action( 'init', 'create_my_post_types' );
@@ -383,7 +408,7 @@ function create_faculty_staff_taxonomies()
 
 // Re-define meta box path and URL
 define( 'RWMB_URL', trailingslashit( get_template_directory_uri() . '/library/meta-boxes' ) );
-define( 'RWMB_DIR', trailingslashit( TEMPLATEPATH . '/library/meta-boxes' ) );
+define( 'RWMB_DIR', trailingslashit(  get_template_directory() . '/library/meta-boxes' ) );
 // Include the meta box script
 require_once RWMB_DIR . 'meta-box.php';
 // Include the meta box definition (the file where you define meta boxes, see `demo/demo.php`)
