@@ -102,7 +102,7 @@
 				
 								<?php if ( has_nav_menu('top-nav') ) : ?>
 								
-									<?php wp_nav_menu(array('fallback_cb' => 'wp_page_menu', 'container_class' => '','container' => '', 'items_wrap' => '<ul id="ada-dropdowns">%3$s</ul>', 'theme_location' => 'top-nav') ); ?>
+									<?php wp_nav_menu(array('fallback_cb' => 'wp_page_menu', 'container_class' => '','container' => '', 'items_wrap' => '<ul>%3$s</ul>', 'theme_location' => 'top-nav') ); ?>
 																	
 								<?php else: ?>
 								

@@ -105,7 +105,6 @@ register_nav_menu('top-nav', 'Main Navigation');
 //You don't want to use custom menus! That's lame, I guess we need a graceful fallback
 function page_menu_args( $args ) {
 $args['show_home'] = true;
-$args['menu_class'] = 'tabs';
 return $args;
 }
 add_filter( 'wp_page_menu_args', 'page_menu_args' );
