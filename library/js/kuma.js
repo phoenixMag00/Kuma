@@ -1,14 +1,12 @@
-/* Add classes (or remove classes) with jQuery */
+/* Add classes or IDs (or remove classes or IDs) with jQuery */
 jQuery(document).ready(function() {
 	jQuery("#parent-navigation ul").attr('id', 'ada-dropdowns');
 	jQuery("#parent-navigation ul li:last-child").addClass("extra-border");
 	jQuery("#parent-navigation ul ul li:last-child").removeClass("extra-border");
-	jQuery(".homepage-bottom-single-box:nth-child(3n)").addClass("homepage-last-box");
 	jQuery("#employee-types li:last-child a").addClass("last-employee-type");
 	jQuery("#footer-right h5:nth-child(n+6) a").addClass("second-icon-row");
 	
 });
-
 
 // So Useful...Works with the twentyten dropdown HTML and CSS packaged in Wordpress (In non-conflict mode due to requirments of wp_enque_script)
 jQuery(document).ready(function(){

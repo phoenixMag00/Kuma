@@ -20,7 +20,7 @@
 
 	// Add a page number if necessary:
 	if ( $paged >= 2 || $page >= 2 )
-		echo ' | ' . sprintf( __( 'Page %s', 'twentyeleven' ), max( $paged, $page ) );
+		echo ' | ' . sprintf( __( 'Page %s', 'kuma_theme' ), max( $paged, $page ) );
 ?> | George Mason University</title>
 <link rel="shortcut icon" type="image/x-icon" href="http://gmu.edu/favicon.ico" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
