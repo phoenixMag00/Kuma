@@ -6,7 +6,7 @@
 	
 <div id="content-left" class="second-level-full-width">
 	
-	<h2 class="category-header"><?php $faculty_staff_tax = get_the_term_list( $post->ID, 'employee_types'); echo strip_tags($faculty_staff_tax) ; ?></h2>	
+	<h2><?php $faculty_staff_tax = get_the_term_list( $post->ID, 'employee_types'); echo strip_tags($faculty_staff_tax) ; ?></h2>	
 	
 		<?php 
 		

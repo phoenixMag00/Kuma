@@ -1,4 +1,18 @@
 .nivo-caption { width: 190px }
+#content-right #search-form {
+
+}
+#content-right #search { width: 140px }
+#content-right #search-form input {
+
+}
+#content-right #search-form input:focus {
+
+}
+#content-right #go-button {
+    padding: 5px;
+    max-height: 30px;
+}
 #footer-left {
     padding-top: 5px;
     float: left;

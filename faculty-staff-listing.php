@@ -12,7 +12,7 @@ Template Name: Faculty Staff Listing
 	
 <div id="content-left" class="second-level-full-width">
 	
-	<h2 class="category-header"><?php echo get_the_title($post->ID) ?></h2>	
+	<h2><?php echo get_the_title($post->ID) ?></h2>	
 	
 		<?php 
 		
