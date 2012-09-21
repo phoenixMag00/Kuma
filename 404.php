@@ -18,7 +18,7 @@
 							
 							<ul>
 								<li id="search-line">Try
-									<label>searching the Mason Web: 
+									<label id="search-404">searching the Mason Web: 
 									<input name="q" type="text" class="text" maxlength="600"></label> 
 											</li>
 								<li> Check the <a href="http://www.gmu.edu/mlnavbar/masonaz/">Mason A-Z Directory</a>.</li>

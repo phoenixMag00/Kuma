@@ -392,7 +392,7 @@ body .section-container {
 .commentlist {
     padding: 0;
     text-align: justify;
-    max-width: 690px;
+    max-width: 750px;
 }
 .commentlist .comment {
     margin: 10px 0 0;
@@ -654,6 +654,7 @@ body .section-container {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
     text-shadow: none !important;
 }
+.black-title a {color: #fff !important}
 .black-arrow {
     background: url(../images/content-right-black-down-arrow-29-15.png) no-repeat;
     background-position: 30px 0;

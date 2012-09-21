@@ -54,11 +54,11 @@
 				
 					<?php $options = get_option('kuma_theme_options'); if (isset($options['search'])) : ?>
    				
-						<form method="get" action="http://search1.gmu.edu/search" id="search-form">
+						<form method="get" action="http://search1.gmu.edu/search" id="search-form-header">
 						
-							<label for="search">Search</label>
-							<input type="text" value="Search Mason" name="q" id="search" onfocus="clearValue(this)" />
-							<input type="submit" id="go-button" value="Search"  />
+							<label for="search-header">Search</label>
+							<input type="text" value="Search Mason" name="q" id="search-header" onfocus="clearValue(this)" />
+							<input type="submit" id="go-button-header" value="Search"  />
 							<input type="hidden" name="site" value="mason_test" />
 							<input type="hidden" name="client" value="mason_test" />
 							<input type="hidden" name="proxystylesheet" value="mason_test" />
@@ -71,7 +71,7 @@
 					
 						<form method="get" action="<?php echo home_url( '/' ); ?>" id="search-form-header">
 
-							<label for="search" id="search-label">Search</label>
+							<label for="search-header" id="search-label">Search</label>
 							<input type="text" value="Search" name="s" id="search-header" onfocus="clearValue(this)" />
 							<input type="submit" id="go-button-header" value="Search"  />
 						
