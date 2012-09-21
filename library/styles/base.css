@@ -211,7 +211,7 @@ body .section-container {
 #parent-navigation .current-menu-ancestor > a,
 #parent-navigation .current_page_item > a,
 #parent-navigation .current_page_ancestor > a { font-weight: bold }
-#search-form {
+#search-form-header {
     position: absolute;
     top: 175px;
     right: 0;
@@ -222,12 +222,12 @@ body .section-container {
     padding-left: 30px;
     background-position: 30px 0;
 }
-#search-form label {
+#search-form-header label {
     display: none;
     text-indent: -9999px;
     font-size: 1px;
 }
-#search-form input {
+#search-form-header input {
     width: 112px;
     color: #9fa8b0;
     background: none;
@@ -238,8 +238,8 @@ body .section-container {
     padding-right: 10px;
     font-size: 11px;
 }
-#search-form input:focus { color: #fff }
-#search-form #go-button {
+#search-form-header input:focus { color: #fff }
+#search-form-header #go-button-header {
     float: left;
     margin-top: 8px;
     margin-left: 7px;
@@ -332,6 +332,7 @@ body .section-container {
     color: #006633;
     font-size: 2.5em;
 }
+.category-header {font-size: 3em !important; margin-bottom: 15px !important; border-bottom: 2px solid #ccc;}
 #content-left .post-index h2 { line-height: 120% }
 #content-left .post-index h2 a {
     font-size: .8em;
@@ -376,23 +377,22 @@ body .section-container {
     box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, .2);
 }
 #comments {
+    padding-left: 10px;
     clear: both;
-    max-width: 750px;
-    margin-left: 10px;
+    border-top: 2px solid #ccc;
 }
 #comments h3 {
-    margin-top: 15px;
     padding-top: 15px;
     color: #333;
     font-size: 1.4em;
     padding-top: 15px;
     width: 100%;
-    border-top: 2px solid #ccc;
 }
 /* Begin Comments*/
 .commentlist {
     padding: 0;
     text-align: justify;
+    max-width: 690px;
 }
 .commentlist .comment {
     margin: 10px 0 0;
@@ -474,6 +474,7 @@ body .section-container {
     border-top: none !important;
     margin-top: 0 !important;
 }
+.form-allowed-tags { max-width: 690px }
 #commentform input[type=text],
 #comment,
 #submit {
@@ -497,6 +498,7 @@ body .section-container {
 .search-query-return {
     color: #7a7a7a;
     font-size: 1em;
+    margin-top: 10px;
 }
 .your-query { color: #E86411 }
 .pagination {
@@ -565,6 +567,33 @@ body .section-container {
 #content-right {
     width: 222px;
     float: left;
+}
+#content-right #search-form {
+    position: relative;
+    top: 3px;
+    min-height: 40px;
+}
+#content-right #search {
+    float: left;
+    width: 150px;
+    border: 2px solid #ccc;
+    padding: 5px;
+   height: 15px;
+}
+#content-right #search-form input {
+
+}
+#content-right #search-form input:focus {
+
+}
+#content-right #go-button {
+    position: absolute;
+    right: 0;
+    padding: 5px;
+    border: 2px solid #ccc;
+    background: none;
+    cursor: pointer;
+    height: 29px;
 }
 .text-box {
     background-color: #fff;
@@ -640,6 +669,7 @@ body .section-container {
 .text-box li {
     margin-top: 10px;
     line-height: 150%;
+    width: 90%;
 }
 .text-box a {
     color: #006633;

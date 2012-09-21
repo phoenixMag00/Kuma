@@ -50,10 +50,10 @@
 	    			<?php endif; ?>
     			
 	    					<?php the_content(); ?>
+	    					
+	    						<p><em>Write to <strong><?php the_author(); ?></strong>  at <a href="mailto:<?php the_author_meta('user_email'); ?>"><?php the_author_meta('user_email'); ?></a></em></p>
 	    			
-	    						
-		
-		</div>
+	    </div>
 			
 			<?php $options = get_option('kuma_theme_options'); if (isset($options['postcomments'])) : ?>
 			

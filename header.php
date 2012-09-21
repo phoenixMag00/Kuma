@@ -69,7 +69,13 @@
    			
 					<?php else: ?>
 					
-						<?php get_search_form(); ?>
+						<form method="get" action="<?php echo home_url( '/' ); ?>" id="search-form-header">
+
+							<label for="search">Search</label>
+							<input type="text" value="Search" name="s" id="search-header" onfocus="clearValue(this)" />
+							<input type="submit" id="go-button-header" value="Search"  />
+						
+						</form>
 						
 					<?php endif; ?>
 						
