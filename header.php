@@ -71,7 +71,7 @@
 					
 						<form method="get" action="<?php echo home_url( '/' ); ?>" id="search-form-header">
 
-							<label for="search">Search</label>
+							<label for="search" id="search-label">Search</label>
 							<input type="text" value="Search" name="s" id="search-header" onfocus="clearValue(this)" />
 							<input type="submit" id="go-button-header" value="Search"  />
 						
