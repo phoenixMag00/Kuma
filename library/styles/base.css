@@ -277,6 +277,8 @@ body .section-container {
     color: #063;
     text-shadow: -1px 1px 1px #ffffff;
     text-decoration: none;
+    word-spacing: 4px;
+    letter-spacing: 1px;
 }
 #child-navigation ul {
     width: 175px;
@@ -317,6 +319,8 @@ body .section-container {
     font-weight: 400;
     text-shadow: -1px 1px 1px #ffffff;
     margin-bottom: 7px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
 }
 #content-left p {
     color: #383838;
@@ -612,6 +616,7 @@ body .section-container {
     padding: 5px;
     text-shadow: -1px 1px 1px #ffffff;
     margin-bottom: 0 !important;
+    letter-spacing: 2px;
 }
 .text-box p {
     line-height: 150%;
