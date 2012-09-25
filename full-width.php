@@ -33,9 +33,7 @@ Template Name: Full Width Page
 		
 		    <?php endif; ?>
 
-	</div>
-		
-		<?php get_sidebar(); ?>
+		</div>
 
 	</div>
 
