@@ -691,6 +691,7 @@ body .section-container {
     margin-bottom: 10px;
 }
 #wp-calendar td { text-align: center }
+#content-right iFrame {width: 90%; margin: auto 10px }
 #homepage-bottom-boxes { margin-bottom: 30px }
 #masonry-boxes { clear: both }
 .homepage-bottom-single-box {
