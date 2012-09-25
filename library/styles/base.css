@@ -69,6 +69,8 @@ body .section-container {
     height: 91px;
     width: 500px;
     border-left: 1px solid #000;
+    letter-spacing: 1px;
+    word-spacing: 3px;
 }
 #site-name {
     display: table-cell;
