@@ -57,7 +57,7 @@ function theme_options_do_page() {
 					<tr valign="top"><th scope="row"><?php _e( 'Post Comments', 'kumatheme' ); ?></th>
 						<td>
 							<input id="kuma_theme_options[option2]" name="kuma_theme_options[postcomments]" type="checkbox" value="1" <?php checked( '1', (isset($options['postcomments'])) ); ?> />
-							<label class="description" for="kuma_theme_options[postcomments]"><?php _e( 'Enable Post Comments. Needs documentation.', 'kumatheme' ); ?></label>
+							<label class="description" for="kuma_theme_options[postcomments]"><?php _e( 'Enable Post Comments. <a href="https://github.com/phoenixMag00/Kuma/wiki/Initial-Set-Up" target="_blank">Learn More</a>.', 'kumatheme' ); ?></label>
 						</td>
 					</tr>
 					
@@ -71,14 +71,14 @@ function theme_options_do_page() {
 					<tr valign="top"><th scope="row"><?php _e( 'Enable Homepage Slider', 'kumatheme' ); ?></th>
 						<td>
 							<input id="kuma_theme_options[option4]" name="kuma_theme_options[homepageslider]" type="checkbox" value="1" <?php checked( '1', (isset($options['homepageslider'])) ); ?> />
-							<label class="description" for="kuma_theme_options[homepageslider]"><?php _e( 'Enable the Homepage Slider. Needs Documentation.	', 'kumatheme' ); ?></label>
+							<label class="description" for="kuma_theme_options[homepageslider]"><?php _e( 'Enable the Homepage Slider. <a href="https://github.com/phoenixMag00/Kuma/wiki/Homepage-Slider" target="_blank">Learn More</a>.	', 'kumatheme' ); ?></label>
 						</td>
 					</tr>
 					
 					<tr valign="top"><th scope="row"><?php _e( 'Enable Faculty and Staff Listing', 'kumatheme' ); ?></th>
 						<td>
 							<input id="kuma_theme_options[option5]" name="kuma_theme_options[facstafflisting]" type="checkbox" value="1" <?php checked( '1', (isset($options['facstafflisting'])) ); ?> />
-							<label class="description" for="kuma_theme_options[facstafflisting]"><?php _e( 'Enable Faculty and Staff Listings. Needs Documentation.', 'kumatheme' ); ?></label>
+							<label class="description" for="kuma_theme_options[facstafflisting]"><?php _e( 'Enable Faculty and Staff Listings. <a href="https://github.com/phoenixMag00/Kuma/wiki/Setting-Up-the-Faculty-and-Staff-Listing" target="_blank">Learn More</a>.', 'kumatheme' ); ?></label>
 						</td>
 					</tr>
 				
