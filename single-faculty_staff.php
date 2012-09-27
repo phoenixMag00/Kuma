@@ -2,21 +2,9 @@
 
 <div id="content">
 
-	<div class="section-container">
-	
-<?php //START - Logic to auto decide columns on pages ?>
+<div class="section-container">
 
-<?php if (( is_active_sidebar( 'black-box-post' ) or is_active_sidebar( 'tan-box-post' )) ) : ?>
-
-	<?php $col_type = "homepage-with-widgets" ?>
-
-<?php else: ?>
-
-	<?php $col_type = "homepage-no-widgets" ?>
-
-<?php endif; ?>
-
-<div id="content-left" class="<?php echo $col_type ?>">
+<div id="content-left" class="homepage-no-widgets">
 	
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	
@@ -93,8 +81,6 @@
     <?php endif; ?>
 
   		</div>
-		
-		<?php get_sidebar(); ?>
 
 	</div>
 

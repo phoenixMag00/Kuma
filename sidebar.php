@@ -10,6 +10,11 @@
 		<?php dynamic_sidebar( 'black-box-page' ); ?>
 		<?php dynamic_sidebar( 'tan-box-page' ); ?>
 	
+	<?php elseif ( is_archive() or is_home() or is_search() ): ?>
+	
+		<?php dynamic_sidebar( 'black-box-archive' ); ?>
+		<?php dynamic_sidebar( 'tan-box-archive' ); ?>
+	
 	<?php else : ?>
 	
 		<?php dynamic_sidebar( 'black-box-post'); ?>

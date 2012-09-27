@@ -156,7 +156,43 @@ register_sidebar(array(
 	'description' => 'These widgets will show up on your Blog Home as well as your Single Posts'
 
 ));
-     
+
+register_sidebar(array(
+	
+	'id' => 'black-box-archive',
+	
+	'name' => 'Archive Widgets (Black)',
+	
+	'before_widget' => '<div class="text-box">',
+	
+	'after_widget' => '</div>',
+	
+	'before_title' => '<h4 class="black-title">',
+	
+	'after_title' => '</h4><div class="black-arrow"></div>',
+	
+	'description' => 'These widgets will show up on your Archive Pages (Categories, Dates, etc.)'
+
+));
+
+register_sidebar(array(
+	
+	'id' => 'tan-box-archive',
+	
+	'name' => 'Archive Widgets (Tan)',
+	
+	'before_widget' => '<div class="text-box">',
+	
+	'after_widget' => '</div>',
+	
+	'before_title' => '<h4>',
+	
+	'after_title' => '</h4><div class="tan-arrow"></div>',
+	
+	'description' => 'These widgets will show up on your Archive Pages (Categories, Dates, etc.)'
+
+));
+    
 register_sidebar(array(
 
 	'id' => 'black-box-page',
