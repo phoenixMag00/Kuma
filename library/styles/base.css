@@ -4,7 +4,7 @@ html,
 body { height: 100% }
 body {
     font-family: Arial,Verdena;
-    font-size: 12px;
+    font-size: 0.750em;
     background: url(../images/body-background-6-212.png) center top repeat-x #eeeeee;
     padding: 0;
     margin: 0 auto;
@@ -326,6 +326,7 @@ body .section-container {
 }
 #content-left p {
     color: #383838;
+    font-size: 1.167em;
     line-height: 1.5em;
     margin-bottom: 15px;
 }
@@ -363,9 +364,11 @@ body .section-container {
     left: 35px;
 }
 #content-left ul li {
+    font-size: 1.167em;
     color: #383838;
     padding-bottom: 5px;
     line-height: 160%;
+    
 }
 #content-left li a {
     color: #006633;
