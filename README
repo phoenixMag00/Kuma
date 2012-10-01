@@ -4,4 +4,6 @@ Kuma Release Notes
 About Kuma
 ----------
 
-More Coming Soon!
+Please check the Wiki for instructions on installation and set up.
+
+Download the zip file from gitHub and unzip the contents into a folder named 'kuma'. Then upload that folder to your themes directory in the wp-content folder.
