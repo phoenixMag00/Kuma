@@ -148,7 +148,8 @@ function theme_options_do_page() {
 			
 				<h3>Kuma Credits</h3>
 				
-					<p>Make sure to add links and props to certain people.</p>
+					<p>Integrated Libraries: <a href="http://nivo.dev7studios.com/" target="_blank">Nivo Image Slider</a>, <a href="http://themeshaper.com/2010/06/03/sample-theme-options/">Theme Options (by Ian Steward)</a> and <a href="http://www.deluxeblogtips.com/meta-box/include-meta-box-plugin-in-themes/">Meta Box Plugin (by rilwis)</a>.</p>
+					<p>Thanks to the George Mason Community. Extra thanks are in order for: Kate Orf (ITU), Karen Wolf (University Life) and all the other brave beta testers!</p>
 			
 			</table>
 		
