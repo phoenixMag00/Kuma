@@ -473,4 +473,7 @@ require_once RWMB_DIR . 'meta-box.php';
 // Include the meta box definition (the file where you define meta boxes, see `demo/demo.php`)
 include RWMB_DIR . 'config-meta-boxes.php';
 
+require_once('wp-updates-theme.php');
+new WPUpdatesThemeUpdater( 'http://wp-updates.com/api/1/theme', 46, basename(get_template_directory()) );
+
 ?>
