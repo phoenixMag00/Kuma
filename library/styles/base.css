@@ -344,6 +344,7 @@ body .section-container {
     margin-bottom: 15px !important;
     border-bottom: 2px solid #ccc;
 }
+#content-left .post-index {margin-bottom: 30px;}
 #content-left .post-index h2 { line-height: 120% }
 #content-left .post-index h2 a {
     font-size: .8em;
@@ -512,7 +513,7 @@ body .section-container {
     margin-top: 0;
     margin-bottom: 9px !important;
     color: #7a7a7a;
-    font-size: 11px;
+    font-style: italic;
 }
 .last-updated { font-style: italic }
 .search-query-return {
