@@ -52,34 +52,34 @@
 			
 				<h2><a href="<?php echo home_url() ?>" id="site-name"><?php bloginfo('name'); ?></a></h2>
 				
-					<?php $options = get_option('kuma_theme_options'); if (isset($options['search'])) : ?>
-   				
-						<form method="get" action="http://search1.gmu.edu/search" id="search-form-header">
+					<p><a href="#content" id="skip-navigation" class="text-swap">Skip to Content</a></p>
+				
+						<?php $options = get_option('kuma_theme_options'); if (isset($options['search'])) : ?>
+	   				
+							<form method="get" action="http://search1.gmu.edu/search" id="search-form-header">
+							
+								<label for="search-header">Search</label>
+								<input type="text" value="Search Mason" name="q" id="search-header" onfocus="clearValue(this)" />
+								<input type="submit" id="go-button-header" value="Search"  />
+								<input type="hidden" name="site" value="mason_test" />
+								<input type="hidden" name="client" value="mason_test" />
+								<input type="hidden" name="proxystylesheet" value="mason_test" />
+								<input type="hidden" name="output" value="xml_no_dtd" />
+								<input type="hidden" name="as_dt" value="i" />
+							
+							</form>
+	   			
+						<?php else: ?>
 						
-							<label for="search-header">Search</label>
-							<input type="text" value="Search Mason" name="q" id="search-header" onfocus="clearValue(this)" />
-							<input type="submit" id="go-button-header" value="Search"  />
-							<input type="hidden" name="site" value="mason_test" />
-							<input type="hidden" name="client" value="mason_test" />
-							<input type="hidden" name="proxystylesheet" value="mason_test" />
-							<input type="hidden" name="output" value="xml_no_dtd" />
-							<input type="hidden" name="as_dt" value="i" />
-						
-						</form>
-   			
-					<?php else: ?>
-					
-						<form method="get" action="<?php echo home_url( '/' ); ?>" id="search-form-header">
-
-							<label for="search-header" id="search-label">Search</label>
-							<input type="text" value="Search" name="s" id="search-header" onfocus="clearValue(this)" />
-							<input type="submit" id="go-button-header" value="Search"  />
-						
-						</form>
-						
-					<?php endif; ?>
-						
-						<p><a href="#content" id="skip-navigation" class="text-swap">Skip to Content</a></p>
+							<form method="get" action="<?php echo home_url( '/' ); ?>" id="search-form-header">
+	
+								<label for="search-header" id="search-label">Search</label>
+								<input type="text" value="Search" name="s" id="search-header" onfocus="clearValue(this)" />
+								<input type="submit" id="go-button-header" value="Search"  />
+							
+							</form>
+							
+						<?php endif; ?>
 				
 							<div id="aux-nav">
 				
@@ -88,7 +88,7 @@
 									<?php if ( has_nav_menu('aux-nav') ) : ?>
 								
 										<?php wp_nav_menu(array('fallback_cb' => 'wp_page_menu', 'container_class' => '','container' => '', 'items_wrap' => '%3$s', 'theme_location' => 'aux-nav') ); ?>
-   					
+						
 									<?php else: ?>
 				
 										<li><a href="http://www.gmu.edu/resources/students/">Students</a></li>
@@ -103,22 +103,22 @@
 								
 								</ul>
 				
-						</div>
-				
-							<div id="parent-navigation">
-				
-								<?php if ( has_nav_menu('top-nav') ) : ?>
-								
-									<?php wp_nav_menu(array('fallback_cb' => 'wp_page_menu', 'container_class' => '','container' => '', 'items_wrap' => '<ul>%3$s</ul>', 'theme_location' => 'top-nav') ); ?>
-																	
-								<?php else: ?>
-								
-									<?php wp_page_menu( array( 'show_home' => 1, 'sort_column' => 'menu_order' ) ); ?>
-								
-								<?php endif; ?>
-								
 							</div>
+				
+								<div id="parent-navigation">
+					
+									<?php if ( has_nav_menu('top-nav') ) : ?>
+									
+										<?php wp_nav_menu(array('fallback_cb' => 'wp_page_menu', 'container_class' => '','container' => '', 'items_wrap' => '<ul>%3$s</ul>', 'theme_location' => 'top-nav') ); ?>
+																		
+									<?php else: ?>
+									
+										<?php wp_page_menu( array( 'show_home' => 1, 'sort_column' => 'menu_order' ) ); ?>
+									
+									<?php endif; ?>
+									
+								</div>
 		
-						</div>
+							</div>
 			
-					</div>
+	</div>
