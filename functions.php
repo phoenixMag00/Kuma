@@ -53,8 +53,16 @@ add_action('wp_enqueue_scripts', 'my_scripts_method');
 //Add Featured Image Function
 add_theme_support( 'post-thumbnails' );
 
-//Add additional generated image sizes also remove width and height attributes from img tags
+//Set Default Inline Image Upload Demensions
+update_option('thumbnail_size_w', 200);
+update_option('thumbnail_size_h', 200);
+update_option('thumbnail_crop', 0);
+update_option('medium_size_w', 300);
+update_option('medium_size_h', 300);
+update_option('large_size_w', 690);
+update_option('large_size_h', 600);
 
+//Add additional generated image sizes also remove width and height attributes from img tags
 add_image_size( 'homepage-slide', 696, 312, true ); //Cropped to exact demensions
 add_image_size( 'indexed-featured', 220, 240, true ); //Cropped to exact demensions
 add_image_size( 'faculty-staff-featured', 150, 150, true ); //Cropped to exact demensions
