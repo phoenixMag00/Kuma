@@ -59,8 +59,8 @@ update_option('thumbnail_size_h', 200);
 update_option('thumbnail_crop', 0);
 update_option('medium_size_w', 300);
 update_option('medium_size_h', 300);
-update_option('large_size_w', 690);
-update_option('large_size_h', 600);
+update_option('large_size_w', 670);
+update_option('large_size_h', 550);
 
 //Add additional generated image sizes also remove width and height attributes from img tags
 add_image_size( 'homepage-slide', 696, 312, true ); //Cropped to exact demensions
