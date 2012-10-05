@@ -112,9 +112,9 @@ body .section-container {
 #aux-nav {
     position: absolute;
     text-transform: uppercase;
-    font-size: 11px;
-    line-height: 18px;
-    top: 13px;
+    font-size: 0.917em;
+    line-height: 130%;
+    top: 8px;
     right: 5px;
     color: #2f2f2f;
     width: 110px;
@@ -125,7 +125,10 @@ body .section-container {
     height: 141px;
     list-style-type: none;
 }
-#aux-nav li { list-style-type: none }
+#aux-nav li {
+    list-style-type: none;
+    padding: 4px 0;
+}
 #aux-nav a {
     color: #2f2f2f;
     text-decoration: none;
