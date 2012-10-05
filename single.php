@@ -45,7 +45,7 @@
     			
 	    			<?php if ( has_post_thumbnail()) : ?>
  
-	    				<?php the_post_thumbnail('single-page-featured'); ?>
+	    				<?php the_post_thumbnail('single-featured'); ?>
   
 	    			<?php endif; ?>
     			

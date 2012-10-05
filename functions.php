@@ -56,9 +56,11 @@ add_theme_support( 'post-thumbnails' );
 //Add additional generated image sizes also remove width and height attributes from img tags
 
 add_image_size( 'homepage-slide', 696, 312, true ); //Cropped to exact demensions
-add_image_size( 'indexed-featured', 141, 141, true ); //Cropped to exact demensions
+add_image_size( 'indexed-featured', 220, 240, true ); //Cropped to exact demensions
 add_image_size( 'faculty-staff-featured', 150, 150, true ); //Cropped to exact demensions
-add_image_size( 'single-page-featured', 200, 9999, false ); //Cropped to exact demensions
+add_image_size( 'single-featured', 200, 9999, false ); //Cropped to exact demensions
+add_image_size( 'page-featured', 917, 9999, false ); //Cropped to exact demensions
+
 
 add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );
 add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 );

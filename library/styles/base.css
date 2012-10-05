@@ -255,7 +255,7 @@ body .section-container {
 @media not all and (-webkit-min-device-pixel-ratio:0) { 
 	#search-form #go-button { margin-top: -13px }
 }
-#content { margin-top: 20px }
+#content { margin-top: 15px }
 .static-homepage-feature {
     min-width: 917px;
     max-width: 917px;
@@ -386,17 +386,27 @@ body .section-container {
 #content-left li a:focus { text-decoration: underline }
 .attachment-indexed-featured {
     float: right;
-    margin: 15px 10px 30px 35px;
+    margin: 11px 10px 30px 35px;
     padding: 5px;
     background-color: #fff;
     border: 1px solid #b3b3b3 !important;
     -webkit-box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, .2);
     box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, .2);
 }
-.attachment-single-page-featured {
+.attachment-single-featured {
     float: left;
     margin-right: 25px;
     margin-bottom: 20px;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #b3b3b3 !important;
+    -webkit-box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, .2);
+    box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, .2);
+}
+.attachment-page-featured {
+    width: 917px;
+    height: auto;
+    margin-bottom: 10px;
     padding: 5px;
     background-color: #fff;
     border: 1px solid #b3b3b3 !important;
