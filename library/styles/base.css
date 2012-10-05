@@ -386,7 +386,7 @@ body .section-container {
 #content-left li a:focus { text-decoration: underline }
 .attachment-indexed-featured {
     float: right;
-    margin: 11px 10px 30px 35px;
+    margin: 11px 5px 30px 35px;
     padding: 5px;
     background-color: #fff;
     border: 1px solid #b3b3b3 !important;
