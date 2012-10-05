@@ -344,7 +344,11 @@ body .section-container {
     margin-bottom: 15px !important;
     border-bottom: 2px solid #ccc;
 }
-#content-left .post-index {margin-bottom: 30px;}
+#content-left .post-index {
+    min-height: 100px;
+    margin-bottom: 30px;
+    clear: both;
+}
 #content-left .post-index h2 { line-height: 120% }
 #content-left .post-index h2 a {
     font-size: .8em;
@@ -380,9 +384,19 @@ body .section-container {
 }
 #content-left li a:hover,
 #content-left li a:focus { text-decoration: underline }
+.attachment-indexed-featured {
+    float: right;
+    margin: 15px 10px 30px 35px;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #b3b3b3 !important;
+    -webkit-box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, .2);
+    box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, .2);
+}
 .attachment-single-page-featured {
     float: left;
     margin-right: 25px;
+    margin-bottom: 20px;
     padding: 5px;
     background-color: #fff;
     border: 1px solid #b3b3b3 !important;
@@ -536,6 +550,7 @@ body .section-container {
 .current { font-weight: bold }
 .faculty-staff-index {
     float: left;
+    clear: none !important;
     padding: 3px 14px;
     width: 195px;
     background-color: #fff;
@@ -641,7 +656,6 @@ body .section-container {
 .tan-title {
     font-family: Oswald, Arial, sans-serif;
     font-weight: 300 !important;
-    : ;
     font-size: 1.5em !important;
     background-color: #d7d6ce;
     padding: 5px;
@@ -658,6 +672,7 @@ body .section-container {
     background-position: 30px 0;
     width: 100%;
     height: 15px;
+    margin-top: -1px;
     margin-bottom: 5px;
 }
 .black-title {
@@ -680,6 +695,7 @@ body .section-container {
     background-position: 30px 0;
     width: 100%;
     height: 15px;
+    margin-top: -1px;
     margin-bottom: 5px;
 }
 .text-box ul {
