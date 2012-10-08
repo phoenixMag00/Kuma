@@ -256,7 +256,6 @@ body .section-container {
     font-size: 1px;
 }
 @media not all and (-webkit-min-device-pixel-ratio:0) { 
-	#search-form #go-button { margin-top: -13px }
 	#search-form #go-button-header { margin-top: -13px }
 }
 #content { margin-top: 15px }
@@ -731,7 +730,6 @@ body .section-container {
 .text-box a:focus { text-decoration: underline }
 .textwidget img {
     height: auto;
-    max-width: 95%;
     max-width: 93%;
 }
 .rsswidget img { padding-right: 2px }
@@ -814,7 +812,6 @@ body .section-container {
 	    background: url(../images/header-mason-logo-382-282@2x.png) no-repeat;
 	    background-size: 191px 141px;
 	}
-	#search-form #go-button {
 	#search-form-header #go-button-header {
 	    background: url(../images/header-search-icon-26-26@2x.png) no-repeat;
 	    background-size: 13px 13px;
