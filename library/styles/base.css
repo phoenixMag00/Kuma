@@ -257,6 +257,7 @@ body .section-container {
 }
 @media not all and (-webkit-min-device-pixel-ratio:0) { 
 	#search-form #go-button { margin-top: -13px }
+	#search-form #go-button-header { margin-top: -13px }
 }
 #content { margin-top: 15px }
 .static-homepage-feature {
@@ -813,6 +814,7 @@ body .section-container {
 	    background-size: 191px 141px;
 	}
 	#search-form #go-button {
+	#search-form-header #go-button-header {
 	    background: url(../images/header-search-icon-26-26@2x.png) no-repeat;
 	    background-size: 13px 13px;
 	}
