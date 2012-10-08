@@ -397,9 +397,8 @@ body .section-container {
     box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, .2);
 }
 .attachment-single-featured {
-    float: left;
-    margin-right: 25px;
-    margin-bottom: 20px;
+    float: right;
+    margin: 0 5px 20px 20px;
     padding: 5px;
     background-color: #fff;
     border: 1px solid #b3b3b3 !important;
