@@ -62,21 +62,12 @@ update_option('medium_size_h', 300);
 update_option('large_size_w', 670);
 update_option('large_size_h', 550);
 
-//Add additional generated image sizes also remove width and height attributes from img tags
+//Add additional generated image sizes
 add_image_size( 'homepage-slide', 696, 312, true ); //Cropped to exact demensions
 add_image_size( 'indexed-featured', 220, 240, true ); //Cropped to exact demensions
 add_image_size( 'faculty-staff-featured', 150, 150, true ); //Cropped to exact demensions
 add_image_size( 'single-featured', 200, 9999, false ); //Cropped to exact demensions
 add_image_size( 'page-featured', 917, 9999, false ); //Cropped to exact demensions
-
-
-add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );
-add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 );
- 
-function remove_width_attribute( $html ) {
-    $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
-    return $html;
-}
 
 //Add custom headers to theme using theme_support
 $header_args = array(

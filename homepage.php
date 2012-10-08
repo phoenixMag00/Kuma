@@ -27,7 +27,7 @@ Template Name: Homepage
 						 
 						 ?>
 					
-						 	<a href="<?php echo $target_link; ?>"><img src="<?php echo $slider_img_src[0] ?>" alt="<?php the_title_attribute(); ?>" title="#htmlcaption-<?php the_ID();?>" /></a>
+						 	<a href="<?php echo $target_link; ?>"><img src="<?php echo $slider_img_src[0] ?>" width="<?php echo $slider_img_src[1] ?>" height="<?php echo $slider_img_src[2] ?>" alt="<?php the_title_attribute(); ?>" title="#htmlcaption-<?php the_ID();?>" /></a>
 
 					<?php endwhile; else: endif;  ?>
 		
