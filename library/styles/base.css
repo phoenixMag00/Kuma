@@ -732,6 +732,7 @@ body .section-container {
 .textwidget img {
     height: auto;
     max-width: 95%;
+    max-width: 93%;
 }
 .rsswidget img { padding-right: 2px }
 #wp-calendar { width: 100% }
