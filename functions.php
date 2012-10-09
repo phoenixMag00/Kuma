@@ -8,34 +8,11 @@ if(isset($options['rssfeeds'])) {
 	add_theme_support('automatic-feed-links');
 }
 
-/* Hide WP version meta tag from header and generator tag from feeds
- * @return null
- * @filter the_generator
- */
-function fjarrett_remove_wp_version_tag() {
-	return null;
+//Hide WP version meta tag from header and generator tag from feeds
+function wpbeginner_remove_version() {
+return '';
 }
-add_filter( 'the_generator', 'fjarrett_remove_wp_version_tag' );
- 
-/* Hide WP version strings from scripts and styles
- * @return {string} $src
- * @filter script_loader_src
- * @filter style_loader_src
- */
-function fjarrett_remove_wp_version_strings( $src ) {
-	global $wp_version;
- 
-	$parts = explode( '?', $src );
- 
-	if ( $parts[1] === 'ver=' . $wp_version ) {
-		return $parts[0];
-	}
-	else {
-		return $src;
-	}
-}
-add_filter( 'script_loader_src', 'fjarrett_remove_wp_version_strings' );
-add_filter( 'style_loader_src', 'fjarrett_remove_wp_version_strings' );
+add_filter('the_generator', 'wpbeginner_remove_version');
 
 //Inject Theme Dependent jQuery plugins
 function my_scripts_method() {
