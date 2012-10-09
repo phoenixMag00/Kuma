@@ -18,12 +18,12 @@
 				<img src="<?php echo $featured_img_src[0] ?>" class="attachment-page-featured" alt="" />
 			
 			<?php endif; ?>
-		
-				<?php if ($post->post_parent) : ?>
-   					
+			
+				<?php $children = get_pages('child_of='.$post->ID); if ( ( count( $children ) != 0 ) or ($post->post_parent) ): ?>
+			
 					<div id="child-navigation">
 						
-						<h3><a href="<?php echo get_permalink($post->post_parent); ?>"><?php echo get_the_title($post->post_parent); ?></a></h3>
+							<h3><a href="<?php echo get_permalink($post->post_parent); ?>"><?php echo get_the_title($post->post_parent); ?></a></h3>
 					
 								<ul>
 								
@@ -46,21 +46,21 @@
 								</ul>	
 											
 					</div>
-			
+				
 		<?php endif; ?>
-
+		
 
 <?php //START - Logic to auto decide columns on pages ?>
 
-<?php if (( is_active_sidebar( 'tan-box-page' ) or is_active_sidebar( 'black-box-page' )) and (!($post->post_parent)) ) : ?>
+<?php if (( is_active_sidebar( 'tan-box-page' ) or is_active_sidebar( 'black-box-page' )) and empty($children) ) : ?>
 
 	<?php $col_type = "second-level-two-no-child" ?>
 
-<?php elseif (( is_active_sidebar( 'tan-box-page' ) or is_active_sidebar( 'black-box-page' )) and (($post->post_parent)) ) : ?>
+<?php elseif (( is_active_sidebar( 'tan-box-page' ) or is_active_sidebar( 'black-box-page' )) and ( count( $children ) != 0 ) ) : ?>
 
 	<?php $col_type = "second-level-two-child" ?> 
 
-<?php elseif (($post->post_parent)) : ?>
+<?php elseif (( count( $children ) != 0 )) : ?>
 
 	<?php $col_type = "second-level-two-child-nw"  ?> 
 
@@ -87,9 +87,8 @@
     	<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 
     <?php endif; ?>
-
-
-	</div>
+    
+    </div>
 		
 		<?php get_sidebar(); ?>
 
