@@ -607,6 +607,7 @@ body .section-container {
 }
 .faculty-staff-meta-single p { margin: 8px 0 !important }
 .faculty-staff-meta p {
+    font-size: 1em !important;
     font-weight: bold;
     margin: 0 !important;
     padding: 0 !important;
