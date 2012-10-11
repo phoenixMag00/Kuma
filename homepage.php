@@ -6,7 +6,10 @@ Template Name: Homepage
 
 <?php get_header() ; ?>
 
-<?php $options = get_option('kuma_theme_options'); if (isset($options['homepageslider'])) : ?>
+<?php $options = get_option('kuma_theme_options'); ?>
+<?php $args=array('post_type' => 'homepage_slider', 'post_status' => 'publish', 'showposts' => -1, 'caller_get_posts'=> 1); $slider_count=get_posts($args); ?>
+
+<?php if ( (isset($options['homepageslider'])) and (count($slider_count) >= 2)  )  : ?>
 	
 <div id="homepage-slider-feature">
 				
