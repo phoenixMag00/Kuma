@@ -96,7 +96,7 @@ Template Name: Homepage
 	
 <?php //START - Logic to auto decide columns on pages ?>
 
-<?php if (( is_active_sidebar( 'black-box-homepage-sidebar' ) or is_active_sidebar( 'tan-box-homepage-sidebar' )) ) : ?>
+<?php if (( is_active_sidebar( 'widgets-homepage-sidebar' )) ) : ?>
 
 	<?php $col_type = "homepage-with-widgets" ?>
 
@@ -133,7 +133,7 @@ Template Name: Homepage
 
 </div>
 
-<?php if (is_active_sidebar('homepage-bottom')) : ?>
+<?php if (is_active_sidebar('widgets-homepage-bottom')) : ?>
 
 <div id="homepage-bottom-boxes">
 				
@@ -141,7 +141,7 @@ Template Name: Homepage
 	
 		<div id="masonry-boxes">
 	
-			<?php dynamic_sidebar( 'homepage-bottom'); ?>
+			<?php dynamic_sidebar( 'widgets-homepage-bottom'); ?>
 			
 		</div>
 							

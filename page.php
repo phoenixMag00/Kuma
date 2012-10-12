@@ -52,11 +52,11 @@
 
 <?php //START - Logic to auto decide columns on pages ?>
 
-<?php if (( is_active_sidebar( 'tan-box-page' ) or is_active_sidebar( 'black-box-page' )) and empty($children) ) : ?>
+<?php if (( is_active_sidebar( 'widgets-page' )) and empty($children) ) : ?>
 
 	<?php $col_type = "second-level-two-no-child" ?>
 
-<?php elseif (( is_active_sidebar( 'tan-box-page' ) or is_active_sidebar( 'black-box-page' )) and ( count( $children ) != 0 ) ) : ?>
+<?php elseif (( is_active_sidebar( 'widgets-page' )) and ( count( $children ) != 0 ) ) : ?>
 
 	<?php $col_type = "second-level-two-child" ?> 
 

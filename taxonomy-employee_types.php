@@ -26,6 +26,7 @@
 	?>
 	
 	<?php
+		
 		//Override globals to continue sorting by last name
 		$wp_query->set('meta_key' , 'mb_last_name');
 		$wp_query->set('orderby', 'meta_value');
@@ -46,9 +47,9 @@
 	
 		<div class="post-index faculty-staff-index text-box" id="<?php the_ID(); ?>">
     	
-			<h2 class="tan-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+			<h2 class="widget-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 			
-				<div class="tan-arrow"></div>
+				<div class="widget-arrow"></div>
 			
 				<?php if ( has_post_thumbnail()) : ?>
 					
@@ -62,7 +63,7 @@
 				
 				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
 					
-						<img src="<?php bloginfo('template_directory') ?>/library/images/faculty-staff-headshot-placeholder-150-150.png" class="attachment-faculty-staff-featured" />
+						<img src="<?php bloginfo('template_directory') ?>/library/images/faculty-staff-headshot-placeholder-150-150.png" class="attachment-faculty-staff-featured" alt="" />
 					
 					</a>
 				
@@ -70,7 +71,7 @@
 				
 				<div class="faculty-staff-meta">
 					
-					<?php if (trim($job_title[1]) != '') : ?>
+					<?php if (isset($job_title[1])) : ?>
 					
 						<p>Title: <?php echo $job_title ?></p>
 					
@@ -82,7 +83,7 @@
 					
 					<?php endif; ?>
 					
-					<?php if (trim($email[1]) != '') : ?>
+					<?php if (isset($email[1])) : ?>
 					
 						<p>Email: <a href="mailto:<?php echo $email ?>"><?php echo $email ?></a></p>
 					
@@ -92,7 +93,7 @@
 					
 					<?php endif; ?>
 					
-					<?php if (trim($phone_number[1]) != '') : ?>
+					<?php if (isset($phone_number[1])) : ?>
 					
 						<p>Phone: <?php echo $phone_number ?></p>
 					

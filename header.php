@@ -30,6 +30,11 @@
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/styles/nivo-slider.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/styles/slider-kuma-theme.css" type="text/css" media="screen" />
 <?php endif; ?>
+<?php $options = get_option('kuma_theme_options'); if (isset($options['widgetcolorset'])) : ?>
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/styles/widget-color-sets/black.css" type="text/css" media="screen" />
+<?php else: ?>
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/styles/widget-color-sets/tan.css" type="text/css" media="screen" />
+<?php endif; ?>
 <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" type="text/css" media="screen" />
 <!--[if IE 7]>
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/styles/ie7.css" type="text/css" media="screen" />
@@ -93,7 +98,7 @@
 				
 										<li><a href="http://www.gmu.edu/resources/students/">Students</a></li>
 										<li><a href="http://www.gmu.edu/resources/facstaff/">Faculty & Staff</a></li>
-										<li><a href="http://www.gmu.edu/resources/visitors/">Visitors / Maps</a></li>
+										<li><a href="http://www.gmu.edu/resources/visitors/">Visitors & Maps</a></li>
 										<li><a href="http://today.gmu.edu">Today@Mason</a></li>
 										<li><a href="http://hr.gmu.edu/employment/">Careers</a></li>
 										<li><a href="http://mymason.gmu.edu/">My Mason</a></li>

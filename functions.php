@@ -111,177 +111,120 @@ return $args;
 }
 add_filter( 'wp_page_menu_args', 'page_menu_args' );
 
-
 //Let's Add Some Sidebars for Widgets
 add_action( 'widgets_init', 'my_register_sidebars' );
 
-
 //Let's Register Some Sidebars
 function my_register_sidebars() {
-
 
 // The Sidebars 
 if(function_exists('register_sidebar'))
 
 register_sidebar(array(
 
-	'id' => 'black-box-post',
+	'id' => 'widgets-homepage-sidebar',
 	
-	'name' => 'Post Widgets (Black)',
-	
-	'before_widget' => '<div class="text-box">',
-	
-	'after_widget' => '</div>',
-	
-	'before_title' => '<h4 class="black-title">',
-	
-	'after_title' => '</h4><div class="black-arrow"></div>',
-	
-	'description' => 'These widgets will show up on your Blog Home as well as your Single Posts'
-
-));
-
-register_sidebar(array(
-	
-	'id' => 'tan-box-post',
-	
-	'name' => 'Post Widgets (Tan)',
+	'name' => 'Homepage Sidebar Widgets',
 	
 	'before_widget' => '<div class="text-box">',
 	
 	'after_widget' => '</div>',
 	
-	'before_title' => '<h4>',
+	'before_title' => '<h4 class="widget-title">',
 	
-	'after_title' => '</h4><div class="tan-arrow"></div>',
+	'after_title' => '</h4><div class="widget-arrow"></div>',
 	
-	'description' => 'These widgets will show up on your Blog Home as well as your Single Posts'
+	'description' => 'These widgets will show up on the Homepage in the sidebar'
 
 ));
 
 register_sidebar(array(
 	
-	'id' => 'black-box-archive',
+	'id' => 'widgets-homepage-bottom',
 	
-	'name' => 'Archive Widgets (Black)',
+	'name' => 'Homepage Bottom Widgets',
 	
-	'before_widget' => '<div class="text-box">',
-	
-	'after_widget' => '</div>',
-	
-	'before_title' => '<h4 class="black-title">',
-	
-	'after_title' => '</h4><div class="black-arrow"></div>',
-	
-	'description' => 'These widgets will show up on your Archive Pages (Categories, Dates, etc.)'
-
-));
-
-register_sidebar(array(
-	
-	'id' => 'tan-box-archive',
-	
-	'name' => 'Archive Widgets (Tan)',
-	
-	'before_widget' => '<div class="text-box">',
+	'before_widget' => '<div class="text-box homepage-bottom-single-box masonry-single-box">',
 	
 	'after_widget' => '</div>',
 	
-	'before_title' => '<h4>',
+	'before_title' => '<h4 class="widget-title">',
 	
-	'after_title' => '</h4><div class="tan-arrow"></div>',
-	
-	'description' => 'These widgets will show up on your Archive Pages (Categories, Dates, etc.)'
-
-));
-    
-register_sidebar(array(
-
-	'id' => 'black-box-page',
-	
-	'name' => 'Page Widgets (Black)',
-	
-	'before_widget' => '<div class="text-box">',
-	
-	'after_widget' => '</div>',
-	
-	'before_title' => '<h4 class="black-title">',
-	
-	'after_title' => '</h4><div class="black-arrow"></div>',
-	
-	'description' => 'These widgets will show up on your Pages and your Homepage'
-
-));
-
-register_sidebar(array(
-	
-	'id' => 'tan-box-page',
-	
-	'name' => 'Page Widgets (Tan)',
-	
-	'before_widget' => '<div class="text-box">',
-	
-	'after_widget' => '</div>',
-	
-	'before_title' => '<h4>',
-	
-	'after_title' => '</h4><div class="tan-arrow"></div>',
-	
-	'description' => 'These widgets will show up on your Pages and your Homepage'
-
-));
-
-register_sidebar(array(
-
-	'id' => 'black-box-homepage-sidebar',
-	
-	'name' => 'Homepage Sidebar Widgets (Black)',
-	
-	'before_widget' => '<div class="text-box">',
-	
-	'after_widget' => '</div>',
-	
-	'before_title' => '<h4 class="black-title">',
-	
-	'after_title' => '</h4><div class="black-arrow"></div>',
-	
-	'description' => 'These widgets will show up in your Homepage sidebar'
-
-));
-
-register_sidebar(array(
-	
-	'id' => 'tan-box-homepage-sidebar',
-	
-	'name' => 'Homepage Sidebar Widgets (Tan)',
-	
-	'before_widget' => '<div class="text-box">',
-	
-	'after_widget' => '</div>',
-	
-	'before_title' => '<h4>',
-	
-	'after_title' => '</h4><div class="tan-arrow"></div>',
-	
-	'description' => 'These widgets will show up in your Homepage sidebar'
-
-));
-
-register_sidebar(array(
-	
-	'id' => 'homepage-bottom',
-	
-	'name' => 'Homepage Bottom Widgets (Tan)',
-	
-	'before_widget' => '<div class="text-box homepage-bottom-single-box">',
-	
-	'after_widget' => '</div>',
-	
-	'before_title' => '<h4>',
-	
-	'after_title' => '</h4><div class="tan-arrow"></div>',
+	'after_title' => '</h4><div class="widget-arrow"></div>',
 	
 	'description' => 'These widgets will show up on the bottom of the homepage.'
+
+));
+
+register_sidebar(array(
+
+	'id' => 'widgets-blog-homepage',
+	
+	'name' => 'Blog Homepage Widgets',
+	
+	'before_widget' => '<div class="text-box">',
+	
+	'after_widget' => '</div>',
+	
+	'before_title' => '<h4 class="widget-title">',
+	
+	'after_title' => '</h4><div class="widget-arrow"></div>',
+	
+	'description' => 'These widgets will on the Blog Homepage'
+
+));
+
+register_sidebar(array(
+
+	'id' => 'widgets-page',
+	
+	'name' => 'Page Widgets',
+	
+	'before_widget' => '<div class="text-box">',
+	
+	'after_widget' => '</div>',
+	
+	'before_title' => '<h4 class="widget-title">',
+	
+	'after_title' => '</h4><div class="widget-arrow"></div>',
+	
+	'description' => 'These widgets will show up on Pages'
+
+));
+
+register_sidebar(array(
+
+	'id' => 'widgets-post',
+	
+	'name' => 'Post Widgets',
+	
+	'before_widget' => '<div class="text-box">',
+	
+	'after_widget' => '</div>',
+	
+	'before_title' => '<h4 class="widget-title">',
+	
+	'after_title' => '</h4><div class="widget-arrow"></div>',
+	
+	'description' => 'These widgets will on Single Posts'
+
+));
+
+register_sidebar(array(
+	
+	'id' => 'widgets-archive',
+	
+	'name' => 'Archive Widgets',
+	
+	'before_widget' => '<div class="text-box">',
+	
+	'after_widget' => '</div>',
+	
+	'before_title' => '<h4 class="widget-title">',
+	
+	'after_title' => '</h4><div class="widget-arrow"></div>',
+	
+	'description' => 'These widgets will show up on Archive Pages (Categories, Dates, etc.)'
 
 ));
 
@@ -299,7 +242,7 @@ register_sidebar(array(
 	
 	'after_title' => '',
 	
-	'description' => 'Left Footer text should be entered as HTML. Leave blank for default footer!'
+	'description' => 'Left Footer text should be entered as HTML. Leave blank for the default footer.'
 
 ));
      
@@ -329,7 +272,6 @@ function comment_format($comment, $args, $depth) {
      </div>
 <?php
         }
-
 
 //Bring the Custom Post
 add_action( 'init', 'create_my_post_types' );
@@ -442,6 +384,7 @@ function create_faculty_staff_taxonomies()
   ));
 
 }
+
 }
 
 // Re-define meta box path and URL
@@ -452,6 +395,7 @@ require_once RWMB_DIR . 'meta-box.php';
 // Include the meta box definition (the file where you define meta boxes, see `demo/demo.php`)
 include RWMB_DIR . 'config-meta-boxes.php';
 
+// Include files for the WP Updates service
 require_once('wp-updates-theme.php');
 new WPUpdatesThemeUpdater( 'http://wp-updates.com/api/1/theme', 46, basename(get_template_directory()) );
 

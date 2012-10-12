@@ -6,7 +6,7 @@
 	
 <?php //START - Logic to auto decide columns on pages ?>
 
-<?php if (( is_active_sidebar( 'black-box-archive' ) or is_active_sidebar( 'tan-box-archive' )) ) : ?>
+<?php if (( is_active_sidebar( 'widgets-archive' )) ) : ?>
 
 	<?php $col_type = "homepage-with-widgets" ?>
 

@@ -28,37 +28,37 @@
 			
 			<?php endif; ?>
 			
-			<?php $options = get_option('kuma_theme_options'); if ($options['facebooklink']) : ?>
+			<?php if (isset($options['facebooklink'])) : ?>
 			
 				<h5><a href="<?php echo $options['facebooklink']; ?>" target="_blank" id="facebook" class="the-social-network text-swap">Like Us on Facebook</a></h5>
 			
 			<?php endif; ?>
 			
-			<?php $options = get_option('kuma_theme_options'); if ($options['twitterlink']) : ?>
+			<?php if (isset($options['twitterlink'])) : ?>
 			
 				<h5><a href="<?php echo $options['twitterlink'] ?>" target="_blank" id="twitter" class="the-social-network text-swap">Follow Us on Twitter</a></h5>
 			
 			<?php endif; ?>
 			
-			<?php $options = get_option('kuma_theme_options'); if ($options['youtubelink']) : ?>
+			<?php if (isset($options['youtubelink'])) : ?>
 			
 				<h5><a href="<?php echo $options['youtubelink'] ?>" target="_blank" id="youtube" class="the-social-network text-swap">Watch our Videos on YouTube</a></h5>
 			
 			<?php endif; ?>
 			
-			<?php $options = get_option('kuma_theme_options'); if ($options['pinterestlink']) : ?>
+			<?php if (isset($options['pinterestlink'])) : ?>
 			
 				<h5><a href="<?php echo $options['pinterestlink'] ?>" target="_blank" id="pinterest" class="the-social-network text-swap">Pin us on Pinterest</a></h5>
 			
 			<?php endif; ?>
 			
-			<?php $options = get_option('kuma_theme_options'); if ($options['foursquarelink']) : ?>
+			<?php if (isset($options['foursquarelink'])) : ?>
 			
 				<h5><a href="<?php echo $options['foursquarelink'] ?>" target="_blank" id="foursquare" class="the-social-network text-swap">Check in on FourSquare</a></h5>
 			
 			<?php endif; ?>
 			
-			<?php $options = get_option('kuma_theme_options'); if ($options['linkedinlink']) : ?>
+			<?php if (isset($options['linkedinlink'])) : ?>
 			
 				<h5><a href="<?php echo $options['linkedinlink'] ?>" target="_blank" id="linkedIn" class="the-social-network text-swap">Connect with Us on LinkedIn</a></h5>
 			
@@ -70,7 +70,7 @@
 
 </div>
 
-<?php if ((is_page_template('homepage.php')) and (is_active_sidebar('homepage-bottom'))) : ?>
+<?php if (is_page_template('homepage.php')) : ?>
 <script src="<?php bloginfo('template_directory'); ?>/library/js/jquery.masonry.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/library/js/masonry-int.js"></script>
 <?php endif; ?>

@@ -54,30 +54,37 @@ function theme_options_do_page() {
 						</td>
 					</tr>
 					
+					<tr valign="top"><th scope="row"><?php _e( 'Widget Color Set', 'kumatheme' ); ?></th>
+						<td>
+							<input id="kuma_theme_options[option2]" name="kuma_theme_options[widgetcolorset]" type="checkbox" value="1" <?php checked( '1', (isset($options['widgetcolorset'])) ); ?> />
+							<label class="description" for="kuma_theme_options[widgetcolorset]"><?php _e( 'Enable a Dark Color Set for the Widget Headers', 'kumatheme' ); ?></label>
+						</td>
+					</tr>
+					
 					<tr valign="top"><th scope="row"><?php _e( 'Post Comments', 'kumatheme' ); ?></th>
 						<td>
-							<input id="kuma_theme_options[option2]" name="kuma_theme_options[postcomments]" type="checkbox" value="1" <?php checked( '1', (isset($options['postcomments'])) ); ?> />
+							<input id="kuma_theme_options[option3]" name="kuma_theme_options[postcomments]" type="checkbox" value="1" <?php checked( '1', (isset($options['postcomments'])) ); ?> />
 							<label class="description" for="kuma_theme_options[postcomments]"><?php _e( 'Enable Post Comments. <a href="https://github.com/phoenixMag00/Kuma/wiki/Initial-Set-Up" target="_blank">Learn More</a>.', 'kumatheme' ); ?></label>
 						</td>
 					</tr>
 					
 					<tr valign="top"><th scope="row"><?php _e( 'Search', 'kumatheme' ); ?></th>
 						<td>
-							<input id="kuma_theme_options[option3]" name="kuma_theme_options[search]" type="checkbox" value="1" <?php checked( '1', (isset($options['search']))	 ); ?> />
+							<input id="kuma_theme_options[option4]" name="kuma_theme_options[search]" type="checkbox" value="1" <?php checked( '1', (isset($options['search']))	 ); ?> />
 							<label class="description" for="kuma_theme_options[search]"><?php _e( 'Use the Mason Google Search Appliance instead of site search', 'kumatheme' ); ?></label>
 						</td>
 					</tr>
 					
 					<tr valign="top"><th scope="row"><?php _e( 'Enable Homepage Slider', 'kumatheme' ); ?></th>
 						<td>
-							<input id="kuma_theme_options[option4]" name="kuma_theme_options[homepageslider]" type="checkbox" value="1" <?php checked( '1', (isset($options['homepageslider'])) ); ?> />
+							<input id="kuma_theme_options[option5]" name="kuma_theme_options[homepageslider]" type="checkbox" value="1" <?php checked( '1', (isset($options['homepageslider'])) ); ?> />
 							<label class="description" for="kuma_theme_options[homepageslider]"><?php _e( 'Enable the Homepage Slider. <a href="https://github.com/phoenixMag00/Kuma/wiki/Homepage-Slider" target="_blank">Learn More</a>.	', 'kumatheme' ); ?></label>
 						</td>
 					</tr>
 					
 					<tr valign="top"><th scope="row"><?php _e( 'Enable Faculty and Staff Listing', 'kumatheme' ); ?></th>
 						<td>
-							<input id="kuma_theme_options[option5]" name="kuma_theme_options[facstafflisting]" type="checkbox" value="1" <?php checked( '1', (isset($options['facstafflisting'])) ); ?> />
+							<input id="kuma_theme_options[option6]" name="kuma_theme_options[facstafflisting]" type="checkbox" value="1" <?php checked( '1', (isset($options['facstafflisting'])) ); ?> />
 							<label class="description" for="kuma_theme_options[facstafflisting]"><?php _e( 'Enable Faculty and Staff Listings. <a href="https://github.com/phoenixMag00/Kuma/wiki/Setting-Up-the-Faculty-and-Staff-Listing" target="_blank">Learn More</a>.', 'kumatheme' ); ?></label>
 						</td>
 					</tr>
@@ -91,7 +98,7 @@ function theme_options_do_page() {
 				
 				<tr valign="top"><th scope="row"><?php _e( 'Mobile Mason Icon', 'kumatheme' ); ?></th>
 					<td>
-						<input id="kuma_theme_options[option6]" name="kuma_theme_options[mobileapplink]" type="checkbox" value="1" <?php checked( '1', (isset($options['mobileapplink'])) ); ?> />
+						<input id="kuma_theme_options[option7]" name="kuma_theme_options[mobileapplink]" type="checkbox" value="1" <?php checked( '1', (isset($options['mobileapplink'])) ); ?> />
 						<label class="description" for="kuma_theme_options[mobileapplink]"><?php _e( 'Yes! Of course we want to support Mason and host a link to download the app', 'kumatheme' ); ?></label>
 					</td>
 				</tr>

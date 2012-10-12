@@ -13,7 +13,7 @@
 	
 <?php //START - Logic to auto decide columns on pages ?>
 
-<?php if (( is_active_sidebar( 'black-box-post' ) or is_active_sidebar( 'tan-box-post' )) ) : ?>
+<?php if (( is_active_sidebar( 'widgets-post' )) ) : ?>
 
 	<?php $col_type = "homepage-with-widgets" ?>
 
