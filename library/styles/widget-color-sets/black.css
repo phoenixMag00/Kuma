@@ -12,6 +12,7 @@
     margin-bottom: 0 !important;
     vertical-align: middle;
     width: 95%;
+    word-wrap: break-word;
 }
 .widget-title a { color: #fff !important }
 .widget-arrow {
