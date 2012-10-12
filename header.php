@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/styles/base.css" media="screen" />
 <?php if (is_page_template('homepage.php')) : ?>
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/styles/nivo-slider.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/styles/slider-kuma-theme.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/styles/slider-kuma-theme.css/?ver=1.0.2" type="text/css" media="screen" />
 <?php endif; ?>
 <?php $options = get_option('kuma_theme_options'); if (isset($options['widgetcolorset'])) : ?>
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/styles/widget-color-sets/black.css" type="text/css" media="screen" />
