@@ -56,17 +56,17 @@ body .section-container {
 #header .section-container { position: relative }
 #mason-logo {
     position: absolute;
-    top: 8px;
+    top: 27px;
     width: 191px;
     height: 141px;
-    background: url(../images/header-mason-logo-191-141.png) no-repeat;
+    background: url(../images/header-mason-logo-162-119.png) no-repeat;
 }
 #header h1 + h2 {
     position: relative;
-    top: 44px;
-    left: 220px;
+    top: 65px;
+    left: 192px;
     padding-left: 33px;
-    height: 91px;
+    height: 81px;
     width: 500px;
     border-left: 1px solid #000;
     letter-spacing: 1px;
@@ -75,7 +75,7 @@ body .section-container {
 #site-name {
     display: table-cell;
     vertical-align: middle;
-    height: 91px;
+    height: 81px;
     font-family: Oswald, Arial, sans-serif;
     color: #383838;
     font-size: 2em;
@@ -760,8 +760,8 @@ body .section-container {
 /* Media Queries for HiDPI displays (ratio equal to or greater than 1.3) */
 @media only screen and (-moz-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3) { 
 	#mason-logo {
-	    background: url(../images/header-mason-logo-382-282@2x.png) no-repeat;
-	    background-size: 191px 141px;
+	    background: url(../images/header-mason-logo-324-238@2x.png) no-repeat;
+	    background-size: 162px 119px;
 	}
 	#search-form-header #go-button-header {
 	    background: url(../images/header-search-icon-26-26@2x.png) no-repeat;
