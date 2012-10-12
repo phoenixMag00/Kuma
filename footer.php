@@ -28,37 +28,37 @@
 			
 			<?php endif; ?>
 			
-			<?php if (isset($options['facebooklink'])) : ?>
+			<?php if ($options['facebooklink']) : ?>
 			
 				<h5><a href="<?php echo $options['facebooklink']; ?>" target="_blank" id="facebook" class="the-social-network text-swap">Like Us on Facebook</a></h5>
 			
 			<?php endif; ?>
 			
-			<?php if (isset($options['twitterlink'])) : ?>
+			<?php if ($options['twitterlink']) : ?>
 			
 				<h5><a href="<?php echo $options['twitterlink'] ?>" target="_blank" id="twitter" class="the-social-network text-swap">Follow Us on Twitter</a></h5>
 			
 			<?php endif; ?>
 			
-			<?php if (isset($options['youtubelink'])) : ?>
+			<?php if ($options['youtubelink']) : ?>
 			
 				<h5><a href="<?php echo $options['youtubelink'] ?>" target="_blank" id="youtube" class="the-social-network text-swap">Watch our Videos on YouTube</a></h5>
 			
 			<?php endif; ?>
 			
-			<?php if (isset($options['pinterestlink'])) : ?>
+			<?php if ($options['pinterestlink']) : ?>
 			
 				<h5><a href="<?php echo $options['pinterestlink'] ?>" target="_blank" id="pinterest" class="the-social-network text-swap">Pin us on Pinterest</a></h5>
 			
 			<?php endif; ?>
 			
-			<?php if (isset($options['foursquarelink'])) : ?>
+			<?php if ($options['foursquarelink']) : ?>
 			
 				<h5><a href="<?php echo $options['foursquarelink'] ?>" target="_blank" id="foursquare" class="the-social-network text-swap">Check in on FourSquare</a></h5>
 			
 			<?php endif; ?>
 			
-			<?php if (isset($options['linkedinlink'])) : ?>
+			<?php if ($options['linkedinlink']) : ?>
 			
 				<h5><a href="<?php echo $options['linkedinlink'] ?>" target="_blank" id="linkedIn" class="the-social-network text-swap">Connect with Us on LinkedIn</a></h5>
 			
