@@ -397,6 +397,6 @@ include RWMB_DIR . 'config-meta-boxes.php';
 
 // Include files for the WP Updates service
 require_once('wp-updates-theme.php');
-new WPUpdatesThemeUpdater( 'http://wp-updates.com/api/1/theme', 46, basename(get_template_directory()) );
+new WPUpdatesThemeUpdater( 'http://wp-updates.com/api/1/theme', 63, basename(get_template_directory()) );
 
 ?>
