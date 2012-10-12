@@ -4,7 +4,7 @@
 	
 		<?php dynamic_sidebar( 'widgets-homepage-sidebar' ); ?>
 	
-	<?php elseif ( is_home()  ): ?>
+	<?php elseif ( is_home() or is_page_template('blog-home.php')  ): ?>
 	
 		<?php dynamic_sidebar( 'widgets-blog-homepage' ); ?>
 	
