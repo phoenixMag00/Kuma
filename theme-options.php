@@ -152,11 +152,17 @@ function theme_options_do_page() {
 			</p>
 		
 		<table class="form-table">
-			
+				
+				<h3>Instructions</h3>
+				
+					<p>Documentation and set up instructions can be found on the <a href="https://github.com/phoenixMag00/Kuma/wiki" target="_blank">Kuma github wiki page.</a></p>
+						
+					</p>
+				
 				<h3>Kuma Credits</h3>
 				
 					<p>Integrated Libraries: <a href="http://nivo.dev7studios.com/" target="_blank">Nivo Image Slider</a>, <a href="http://themeshaper.com/2010/06/03/sample-theme-options/">Theme Options (by Ian Steward)</a> and <a href="http://www.deluxeblogtips.com/meta-box/include-meta-box-plugin-in-themes/">Meta Box Plugin (by rilwis)</a>.</p>
-					<p>Thanks to the George Mason Community. Extra thanks are in order for: Kate Orf (ITU), Karen Wolf (University Life) and all the other brave beta testers!</p>
+					<p>Thanks to the George Mason Community. Extra thanks are in order for: Kate Orf, Karen Wolf, and Cloud Spurlock!</p>
 			
 			</table>
 		
