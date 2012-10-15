@@ -28,7 +28,7 @@
 	<?php
 		
 		//Override globals to continue sorting by last name
-		$wp_query->set('posts_per_page ' , '-1');
+		$wp_query->set('posts_per_page' , '1000');
 		$wp_query->set('meta_key' , 'mb_last_name');
 		$wp_query->set('orderby', 'meta_value');
 		$wp_query->set('order', 'ASC');
