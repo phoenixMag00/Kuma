@@ -31,7 +31,8 @@ Template Name: Faculty Staff Listing
 		}
 		
 	?>
-	<?php query_posts('post_type=faculty_staff&posts_per_page=100&orderby=meta_value&meta_key=mb_last_name&order=ASC') ?>
+	
+	<?php query_posts('post_type=faculty_staff&posts_per_page=-1&orderby=meta_value&meta_key=mb_last_name&order=ASC') ?>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	
 		<?php 
@@ -66,7 +67,7 @@ Template Name: Faculty Staff Listing
 				
 				<div class="faculty-staff-meta">
 					
-					<?php if (isset($email[1])) : ?>
+					<?php if (trim($email[1]) != '') : ?>
 					
 						<p><a href="mailto:<?php echo $email ?>" title="Send Email to <?php the_title_attribute(); ?>">Send Email</a></p>
 					
@@ -75,6 +76,8 @@ Template Name: Faculty Staff Listing
 						<p>No Email Provided</p>
 					
 					<?php endif; ?>
+					
+					<p><a href="<?php the_permalink();?>">Read Bio</a></p>
 					
 				</div>
 		

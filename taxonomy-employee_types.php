@@ -28,6 +28,7 @@
 	<?php
 		
 		//Override globals to continue sorting by last name
+		$wp_query->set('posts_per_page ' , '-1');
 		$wp_query->set('meta_key' , 'mb_last_name');
 		$wp_query->set('orderby', 'meta_value');
 		$wp_query->set('order', 'ASC');
@@ -40,9 +41,6 @@
 		<?php 
 			
 			$email = get_post_meta(get_the_ID(), 'mb_email', true);
-			$job_title = get_post_meta(get_the_ID(), 'mb_job_title', true);
-			$phone_number = get_post_meta(get_the_ID(), 'mb_phone_number', true);
-		
 		?>
 	
 		<div class="post-index faculty-staff-index text-box" id="<?php the_ID(); ?>">
@@ -71,35 +69,17 @@
 				
 				<div class="faculty-staff-meta">
 					
-					<?php if (isset($job_title[1])) : ?>
+					<?php if (trim($email[1]) != '') : ?>
 					
-						<p>Title: <?php echo $job_title ?></p>
-					
-					<?php endif; ?>
-					
-					<?php $faculty_staff_tax = get_the_term_list( $post->ID, 'employee_types' ) ; if (trim($faculty_staff_tax) != '') : ?>
-						
-						<p>Role: <?php echo strip_tags($faculty_staff_tax) ;?></p>
-					
-					<?php endif; ?>
-					
-					<?php if (isset($email[1])) : ?>
-					
-						<p>Email: <a href="mailto:<?php echo $email ?>"><?php echo $email ?></a></p>
+						<p><a href="mailto:<?php echo $email ?>" title="Send Email to <?php the_title_attribute(); ?>">Send Email</a></p>
 					
 					<?php else: ?>
 					
-						<p>Email: Not Provided</p>
+						<p>No Email Provided</p>
 					
 					<?php endif; ?>
 					
-					<?php if (isset($phone_number[1])) : ?>
-					
-						<p>Phone: <?php echo $phone_number ?></p>
-					
-					<?php endif; ?>
-					
-					<p><a href="<?php the_permalink();?>">Read <?php the_title(); ?>'s Bio</a></p>
+						<p><a href="<?php the_permalink();?>">Read Bio</a></p>
 					
 				</div>
 		
