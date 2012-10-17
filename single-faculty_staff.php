@@ -54,7 +54,7 @@
 					
 					<?php if (trim($email[1]) != '') : ?>
 					
-						<p>Email: <a href="<?php echo $email ?>"><?php echo $email ?></a></p>
+						<p>Email: <a href="mailto:<?php echo $email ?>"><?php echo $email ?></a></p>
 					
 					<?php else: ?>
 					
