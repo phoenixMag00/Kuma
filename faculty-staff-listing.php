@@ -59,7 +59,7 @@ Template Name: Faculty Staff Listing
 				
 				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
 					
-						<img src="<?php bloginfo('template_directory') ?>/library/images/faculty-staff-headshot-placeholder-150-150.png" class="attachment-faculty-staff-featured" />
+						<img src="<?php bloginfo('template_directory') ?>/library/images/faculty-staff-headshot-placeholder-150-200.png" class="attachment-faculty-staff-featured" />
 					
 					</a>
 				

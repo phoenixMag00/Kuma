@@ -42,7 +42,7 @@ update_option('large_size_h', 550);
 //Add additional generated image sizes
 add_image_size( 'homepage-slide', 696, 312, true ); //Cropped to exact demensions
 add_image_size( 'indexed-featured', 220, 240, true ); //Cropped to exact demensions
-add_image_size( 'faculty-staff-featured', 150, 150, true ); //Cropped to exact demensions
+add_image_size( 'faculty-staff-featured', 150, 200, true ); //Cropped to exact demensions
 add_image_size( 'single-featured', 200, 9999, false ); //Cropped to exact demensions
 add_image_size( 'page-featured', 917, 9999, false ); //Cropped to exact demensions
 
@@ -170,7 +170,7 @@ register_sidebar(array(
 	
 	'after_title' => '</h4><div class="widget-arrow"></div>',
 	
-	'description' => 'These widgets will on the Blog Homepage'
+	'description' => 'These widgets will show up on the Blog Homepage'
 
 ));
 
@@ -206,7 +206,7 @@ register_sidebar(array(
 	
 	'after_title' => '</h4><div class="widget-arrow"></div>',
 	
-	'description' => 'These widgets will on Single Posts'
+	'description' => 'These widgets will show up on Single Posts'
 
 ));
 
