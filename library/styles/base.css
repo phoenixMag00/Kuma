@@ -679,6 +679,7 @@ body .section-container {
 .text-box a:hover,
 .text-box a:focus { text-decoration: underline }
 .textwidget img {
+    width: inherit;
     height: auto;
     max-width: 93%;
 }
