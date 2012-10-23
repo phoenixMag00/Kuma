@@ -333,11 +333,15 @@ body .section-container {
     line-height: 1.5em;
     margin-bottom: 15px;
 }
-#content-left p a {
+#content-left a {
     color: #063;
     text-decoration: none;
 }
 #content-left p a:hover { text-decoration: underline }
+#content-left h1 {
+    color: #006633;
+    font-size: 2.5em;
+}
 #content-left h2 {
     color: #006633;
     font-size: 2.5em;
@@ -364,10 +368,22 @@ body .section-container {
 #content-left h3 {
     color: #383838;
     font-size: 1.66em;
+    margin-top: 20px;
 }
 #content-left h4 {
     color: #383838;
     font-size: 1.4em;
+    margin-top: 20px;
+}
+#content-left h5 {
+    color: #383838;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+#content-left h6 {
+    color: #383838;
+    font-size: 1.1em;
+    margin-top: 20px;
 }
 #content-left ul {
     margin: 0 0 15px 0;
