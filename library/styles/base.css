@@ -392,10 +392,9 @@ body .section-container {
     margin-top: 20px;
 }
 #content-left ul {
-    margin: 0 0 15px 0;
+    margin: 0 0 15px 35px;
     width: 80%;
     position: relative;
-    left: 35px;
 }
 #content-left ul li {
     font-size: 1.167em;
