@@ -10,7 +10,7 @@ jQuery(document).ready(function() {
 
 // So Useful...Works with the twentyten dropdown HTML and CSS packaged in Wordpress (In non-conflict mode due to requirments of wp_enque_script)
 jQuery(document).ready(function(){
-	jQuery("#ada-dropdowns li").hover(function(){
+	jQuery("#ada-dropdowns ul li").hover(function(){
 		jQuery("ul",jQuery(this)).fadeIn(0);
 	},function(){
 		jQuery("ul",jQuery(this)).fadeOut(0);	

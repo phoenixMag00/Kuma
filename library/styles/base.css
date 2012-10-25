@@ -302,6 +302,12 @@ body .section-container {
 }
 #child-navigation ul li a:hover { color: #063 }
 #child-navigation .current_page_item a { color: #063 !important }
+#child-navigation .children {
+    width: 160px;
+    margin-left: 15px;
+    list-style-type: square;
+}
+#child-navigation .children li { margin: 8px 0 }
 #content-left {
     float: left;
     width: 690px;
