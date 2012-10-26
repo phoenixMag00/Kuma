@@ -161,7 +161,7 @@ function theme_options_do_page() {
 				
 				<h3>Kuma Credits</h3>
 				
-					<p>Integrated Libraries: <a href="http://nivo.dev7studios.com/" target="_blank">Nivo Image Slider</a>, <a href="http://themeshaper.com/2010/06/03/sample-theme-options/">Theme Options (by Ian Steward)</a> and <a href="http://www.deluxeblogtips.com/meta-box/include-meta-box-plugin-in-themes/">Meta Box Plugin (by rilwis)</a>.</p>
+					<p>Integrated Libraries: <a href="http://nivo.dev7studios.com/" target="_blank">Nivo Image Slider</a>, <a href="http://themeshaper.com/2010/06/03/sample-theme-options/">Theme Options (by Ian Steward)</a>, <a href="http://www.deluxeblogtips.com/meta-box/include-meta-box-plugin-in-themes/">Meta Box Plugin (by rilwis)</a>, <a href="http://masonry.desandro.com/" target="_blank">jQuery Masonry by (David DeSandro)</a> and <a href="http://users.tpg.com.au/j_birch/plugins/superfish/" target="_blank">Superfish (by Joel Birch)</a>.</p>
 					<p>Thanks to the George Mason Community. Extra thanks are in order for: Kate Orf, Karen Wolf, and Cloud Spurlock!</p>
 			
 			</table>

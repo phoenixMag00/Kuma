@@ -196,13 +196,17 @@ body .section-container {
     padding: 10px 10px 10px 18px;
     width: 168px;
 }
+
 #parent-navigation li:hover > a,
 #parent-navigation ul ul :hover > a,
-#parent-navigationa:focus {
+#parent-navigations li.sfHover,
+#parent-navigation ul ul .sfHover,
+#parent-navigation a:focus {
     color: #404446;
     background: #fbfbfb;
 }
 #parent-navigations li:hover > a,
+#access li.sfHover > a,
 #parent-navigation a:focus {
     background: #f9f9f9; /* Show a solid color for older browsers */
     background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
@@ -211,7 +215,7 @@ body .section-container {
     background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
     color: #373737;
 }
-#parent-navigation ul li:hover > ul { display: block }
+#parent-navigation ul li:hover > ul, #parent-navigation ul li.sfHover > ul { display: block }
 #parent-navigation .current-menu-item > a,
 #parent-navigation .current-menu-ancestor > a,
 #parent-navigation .current_page_item > a,

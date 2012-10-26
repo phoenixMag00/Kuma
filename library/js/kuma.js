@@ -1,6 +1,5 @@
 /* Add classes or IDs (or remove classes or IDs) with jQuery */
 jQuery(document).ready(function() {
-	jQuery("#parent-navigation ul:nth-child(1)").attr('id', 'ada-dropdowns');
 	jQuery("#parent-navigation ul li:last-child").addClass("extra-border");
 	jQuery("#parent-navigation ul ul li:last-child").removeClass("extra-border");
 	jQuery("#employee-types li:last-child a").addClass("last-employee-type");
@@ -8,20 +7,19 @@ jQuery(document).ready(function() {
 	
 });
 
-// So Useful...Works with the twentyten dropdown HTML and CSS packaged in Wordpress (In non-conflict mode due to requirments of wp_enque_script)
-jQuery(document).ready(function(){
-	jQuery("#ada-dropdowns ul li").hover(function(){
-		jQuery("ul",jQuery(this)).fadeIn(0);
-	},function(){
-		jQuery("ul",jQuery(this)).fadeOut(0);	
+// Make Dropdowns keyboard accessible (Using Superfish Plugin)
+function the_superfish() {
+	jQuery('.menu > ul').superfish({
+		delay:       1, 		// one second delay on mouseout
+		speed:       1,			// faster animation speed
+		autoArrows:  false,		// disable generation of arrow mark-up
+		dropShadows: false		// disable drop shadows
 	});
-	jQuery("a").focus(function(){ // hide drop downs
-		jQuery("#ada-dropdowns ul").fadeOut(0);
-	});
-	jQuery("#ada-dropdowns li a").focus(function(){ // main nav anchor focus
-		jQuery("ul",jQuery(this).parent()).fadeIn(0);
-	});
-	jQuery("#ada-dropdowns li li a").unbind(); // unbind hide drop downs from sub nav anchors
+}
+
+jQuery(document).ready(function() {
+	jQuery.noConflict();
+	the_superfish();
 });
 
 //Clear Top Search Field when user focuses

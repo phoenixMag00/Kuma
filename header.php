@@ -114,8 +114,8 @@
 					
 									<?php if ( has_nav_menu('top-nav') ) : ?>
 									
-										<?php wp_nav_menu(array('fallback_cb' => 'wp_page_menu', 'container_class' => '','container' => '', 'items_wrap' => '<ul>%3$s</ul>', 'theme_location' => 'top-nav') ); ?>
-																		
+										<?php wp_nav_menu(array('fallback_cb' => 'wp_page_menu', 'container' => 'div', 'container_class' => 'menu', 'items_wrap' => '<ul>%3$s</ul>', 'theme_location' => 'top-nav') ); ?>						
+									
 									<?php else: ?>
 									
 										<?php wp_page_menu( array( 'show_home' => 1, 'sort_column' => 'menu_order' ) ); ?>

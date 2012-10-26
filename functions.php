@@ -22,8 +22,20 @@ function my_scripts_method() {
        array('jquery'),
        '1.0' );
        
+   wp_register_script('hoverIntent',
+      get_template_directory_uri() . '/library/js/hoverIntent.js',
+      array('jquery'),
+      '1.0' );
+   
+   wp_register_script('superfish',
+      get_template_directory_uri() . '/library/js/superfish.js',
+      array('jquery'),
+      '1.0' );
+       
    // enqueue the script
    wp_enqueue_script('theme');
+   wp_enqueue_script('superfish');
+   wp_enqueue_script('hoverIntent');
 }
 add_action('wp_enqueue_scripts', 'my_scripts_method');
 
