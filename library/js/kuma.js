@@ -1,6 +1,6 @@
 /* Add classes or IDs (or remove classes or IDs) with jQuery */
 jQuery(document).ready(function() {
-	jQuery("#parent-navigation ul").attr('id', 'ada-dropdowns');
+	jQuery("#parent-navigation ul:nth-child(1)").attr('id', 'ada-dropdowns');
 	jQuery("#parent-navigation ul li:last-child").addClass("extra-border");
 	jQuery("#parent-navigation ul ul li:last-child").removeClass("extra-border");
 	jQuery("#employee-types li:last-child a").addClass("last-employee-type");
