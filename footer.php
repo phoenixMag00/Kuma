@@ -73,9 +73,8 @@
 <?php if (is_page_template('homepage.php')) : ?>
 <script src="<?php bloginfo('template_directory'); ?>/library/js/jquery.masonry.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/library/js/masonry-int.js"></script>
-<?php endif; ?>
-<?php if (is_page_template('homepage.php')) : ?>
 <script src="<?php bloginfo('template_directory'); ?>/library/js/jquery.nivo.slider.pack.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/library/js/jquery.mobile.custom.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/library/js/nivo-int.js"></script>
 <?php endif; ?>
 <?php wp_footer(); ?>
