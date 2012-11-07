@@ -710,7 +710,10 @@ body .section-container {
     max-width: 93%;
 }
 .rsswidget img { padding-right: 2px }
-.rss-date {display: block; margin: 2px 0;}
+.rss-date {
+    display: block;
+    margin: 2px 0;
+}
 #wp-calendar { width: 100% }
 #wp-calendar caption {
     font-weight: bold;
