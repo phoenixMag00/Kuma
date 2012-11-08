@@ -70,25 +70,16 @@ Template Name: Homepage
 			<?php //Detect if there is a custom header...if not, nothing will print out
 		
 			if ( get_header_image()) : ?>
+   				
+   				<img src="<?php header_image(); ?>" alt="Static Header Image for <?php bloginfo('name'); ?>" class="static-homepage-feature" />
    			
-   				<div class="column-row-adjacent">
-					
-					<div class="column-1-1">
-						
-						<img src="<?php header_image(); ?>" alt="Static Header Image for <?php bloginfo('name'); ?>" class="static-homepage-feature" />
-					
-					</div>
-				
-				</div>
- 					
- 		<?php endif; ?>
+   			<?php endif; ?>
 						
 		</div>
 						
 	</div>
 
 <?php endif; ?>
-
 
 <div id="content">
 
