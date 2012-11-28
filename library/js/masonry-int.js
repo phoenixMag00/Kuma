@@ -7,3 +7,13 @@ jQuery(document).ready(function($){
 				});
 			});
 		});
+
+jQuery(document).ready(function($){
+	var $container = $('.gallery');
+		$container.imagesLoaded(function(){
+			$container.masonry({
+				itemSelector : '.gallery-item'
+				
+				});
+			});
+		});
