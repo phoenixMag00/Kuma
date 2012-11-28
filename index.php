@@ -17,8 +17,8 @@
 <?php endif; ?>
 
 <div id="content-left" class="<?php echo $col_type ?>">
-	
-	<h2 class="category-header">News</h2>	
+
+	<h2 class="category-header"><?php single_post_title(); ?></h2>	
 	
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		
