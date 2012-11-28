@@ -34,7 +34,7 @@
 						
 							<?php if ($root_parent = get_the_title($grandparent) !== $root_parent = get_the_title($current)) : ?>
    					
-								<h3><a href="<?php echo get_permalink($grandparent) ?>"><?php echo get_the_title($grandparent); ?></h3>
+								<h3><a href="<?php echo get_permalink($grandparent) ?>"><?php echo get_the_title($grandparent); ?></a></h3>
    					
 							<?php else: ?>
 				
