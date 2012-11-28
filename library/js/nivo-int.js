@@ -7,7 +7,6 @@ jQuery(document).ready(function($) {
     		if(jQuery.support.touch){
 	    		
 		    		$('#slider').nivoSlider({
-			    		manualAdvance: true,
 			    		effect: 'fade',
 			    		animSpeed: 250, // Slide transition speed
 			    		pauseTime: 9000 // How long each slide will show
@@ -15,20 +14,8 @@ jQuery(document).ready(function($) {
 		    		
 		    		$('a.nivo-nextNav').css('visibility', 'hidden');
 		    		$('a.nivo-prevNav').css('visibility', 'hidden');
-	    		
-	    	}
-	    		
-	    	else { 
-	    	
-		    		$('#slider').nivoSlider({
-			    		effect: 'fade',
-			    		animSpeed: 250, // Slide transition speed
-			    		pauseTime: 9000 // How long each slide will show	
-			    	});
-    
-		    	}
-    
-	    		//Then Finish Up swipeleft and swiperight
+		    		
+		    		//Then Finish Up swipeleft and swiperight
 	    			$('#slider').bind( 'swipeleft', function( e ) {
 		    			$('a.nivo-nextNav').trigger('click');
 		    			e.stopImmediatePropagation();
@@ -41,5 +28,17 @@ jQuery(document).ready(function($) {
 			    		return false; } 
 		
 			    	); 
+	    		
+	    	}
+	    		
+	    	else { 
+	    	
+		    		$('#slider').nivoSlider({
+			    		effect: 'fade',
+			    		animSpeed: 250, // Slide transition speed
+			    		pauseTime: 9000 // How long each slide will show	
+			    	});
+    
+		    	}
 
 });
