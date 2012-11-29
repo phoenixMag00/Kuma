@@ -127,6 +127,17 @@ $meta_boxes[] = array(
 			'type'  => 'text',
 		),
 		
+		array(
+			// Field name - Will be used as label
+			'name' => 'Website',
+			// Field ID, i.e. the meta key
+			'id' => $prefix . 'web_site',
+			// Field description (optional)
+			'desc' => 'Must start with http:// or https://',
+			// CLONES: Add to make the field cloneable (i.e. have multiple value)
+			'type'  => 'text',
+		),
+		
 	),
 	
 	'validation' => array(

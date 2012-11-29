@@ -13,6 +13,8 @@
 			$email = get_post_meta(get_the_ID(), 'mb_email', true);
 			$job_title = get_post_meta(get_the_ID(), 'mb_job_title', true);
 			$phone_number = get_post_meta(get_the_ID(), 'mb_phone_number', true);
+			$web_site = get_post_meta(get_the_ID(), 'mb_web_site', true);
+			
 		
 		?>
 	
@@ -65,6 +67,12 @@
 					<?php if (trim($phone_number[1]) != '') : ?>
 					
 						<p>Phone: <?php echo $phone_number ?></p>
+					
+					<?php endif; ?>
+					
+					<?php if (trim($web_site[1]) != '') : ?>
+					
+						<p><a href="<?php echo $web_site ?>">Website</a></p>
 					
 					<?php endif; ?>
 					
