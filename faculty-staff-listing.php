@@ -67,7 +67,7 @@ Template Name: Faculty Staff Listing
 				
 				<div class="faculty-staff-meta">
 					
-					<?php if (trim($email[1]) != '') : ?>
+					<?php if (trim($email) != '') : ?>
 					
 						<p><a href="mailto:<?php echo $email ?>" title="Send Email to <?php the_title_attribute(); ?>">Send Email</a></p>
 					
