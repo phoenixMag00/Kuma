@@ -13,7 +13,7 @@
    					
 			<?php else: ?>
 				
-				<p>&copy; 2012 George Mason University. For All Inquiries: 4400 University Drive, Fairfax, Virginia 22030 <br />
+				<p>&copy; <?php echo date('Y'); ?> George Mason University. For All Inquiries: 4400 University Drive, Fairfax, Virginia 22030 <br />
 			TDD: 703-993-1002  | Phone: 703-993-1000</p>
 	
 			<?php endif; ?>
