@@ -8,7 +8,7 @@
 
 		<div class="page">
     	
-			<img src="<?php bloginfo('template_directory'); ?>/library/images/404-fun-image-300-300.jpg" class="alignleft" alt="Image for 404 Page" />
+			<img src="<?php bloginfo('template_directory'); ?>/library/images/404-fun-image-300-300.jpg" class="cute-dog" alt="Image for 404 Page" />
 			
 				<h2>404 - Page Not Found</h2>
 			
@@ -19,7 +19,7 @@
 							<ul>
 								<li id="search-line">Try
 									<label id="search-404">searching the Mason Web: 
-									<input name="q" type="text" class="text" maxlength="600"></label> 
+									<input name="q" type="text" class="text" maxlength="600" label="Search Mason Web"></label> 
 											</li>
 								<li> Check the <a href="http://www.gmu.edu/mlnavbar/masonaz/">Mason A-Z Directory</a>.</li>
 								<li> If you typed the URL yourself, please make sure that the spelling is correct.</li>
