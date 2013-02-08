@@ -641,6 +641,10 @@ body .section-container {
     padding: 0 !important;
     margin-bottom: 3px !important;
 }
+.cute-dog {
+    float: left;
+    margin-right: 40px;
+}
 #content-right {
     width: 222px;
     float: left;
