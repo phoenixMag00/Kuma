@@ -15,7 +15,6 @@
 			$phone_number = get_post_meta(get_the_ID(), 'mb_phone_number', true);
 			$web_site = get_post_meta(get_the_ID(), 'mb_web_site', true);
 			
-		
 		?>
 	
 		<div class="post-index faculty-staff-single" id="<?php the_ID(); ?>">
