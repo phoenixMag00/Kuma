@@ -17,20 +17,32 @@ Template Name: Faculty Staff Listing
 		<?php 
 		
 			$taxonomy = 'employee_types';
-			$queried_term = get_query_var($taxonomy);
-			$terms = get_terms($taxonomy, 'slug='.$queried_term);
-				
+			$terms = get_terms($taxonomy);
+			$parent_pages = get_pages(array(
+				'meta_key' => '_wp_page_template',
+				'meta_value' => 'faculty-staff-listing.php'
+			));
+
 				if ($terms) {
+				
 					echo '<ul id="employee-types">';
-						foreach($terms as $term) {
-							echo '<li><a href="'.get_term_link($term->slug, $taxonomy).'">'.$term->name.'</a></li>';
-					}
 						
-					echo '</ul>';
-			
-		}
+						foreach($parent_pages as $parent_page) {
+							
+							echo '<li><a href="' . get_permalink($parent_page->ID) . '">All ' . $parent_page->post_title . '</a></li>' ;
+						}
+						
+							foreach($terms as $term) {
+							
+								echo '<li><a href="'.get_term_link($term->slug, $taxonomy).'">'.$term->name.'</a></li>';
+							
+							}
+						
+					echo '</ul>';	
+					
+					}
 		
-	?>
+		?>
 	
 	<?php query_posts('post_type=faculty_staff&posts_per_page=-1&orderby=meta_value&meta_key=mb_last_name&order=ASC') ?>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

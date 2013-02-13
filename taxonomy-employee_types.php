@@ -6,25 +6,38 @@
 	
 <div id="content-left" class="second-level-full-width">
 	
-	<h2><?php $faculty_staff_tax = get_the_term_list( $post->ID, 'employee_types'); echo strip_tags($faculty_staff_tax) ; ?></h2>	
+	<h2><?php single_term_title(); ?></h2>	
 	
 		<?php 
 		
 			$taxonomy = 'employee_types';
 			$terms = get_terms($taxonomy);
-				
+			$parent_pages = get_pages(array(
+				'meta_key' => '_wp_page_template',
+				'meta_value' => 'faculty-staff-listing.php'
+			));
+
 				if ($terms) {
+				
 					echo '<ul id="employee-types">';
-						foreach($terms as $term) {
-							echo '<li><a href="'.get_term_link($term->slug, $taxonomy).'">'.$term->name.'</a></li>';
-					}
 						
-					echo '</ul>';
-			
-		}
+						foreach($parent_pages as $parent_page) {
+							
+							echo '<li><a href="' . get_permalink($parent_page->ID) . '">All ' . $parent_page->post_title . '</a></li>' ;
+						}
+						
+							foreach($terms as $term) {
+							
+								echo '<li><a href="'.get_term_link($term->slug, $taxonomy).'">'.$term->name.'</a></li>';
+							
+							}
+						
+					echo '</ul>';	
+					
+					}
 		
-	?>
-	
+		?>
+			
 	<?php
 		
 		//Override globals to continue sorting by last name
