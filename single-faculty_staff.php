@@ -47,9 +47,13 @@
 					
 					<?php endif; ?>
 					
-					<?php $faculty_staff_tax = get_the_term_list( $post->ID, 'employee_types' ) ; if (trim($faculty_staff_tax) != '') : ?>
+					<?php $faculty_staff_tax = get_the_term_list( $post->ID, 'employee_types','',', ') ; if (trim($faculty_staff_tax) != '') : ?>
+					
+						<?php if (count($faculty_staff_tax) >= 1) : ?>
 						
-						<p>Role: <?php echo strip_tags($faculty_staff_tax) ;?></p>
+						<p>Roles: <?php echo $faculty_staff_tax ;?></p>
+						
+						<?php endif ; ?>
 					
 					<?php endif; ?>
 					
