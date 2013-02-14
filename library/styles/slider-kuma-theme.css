@@ -10,7 +10,6 @@ Supports Thumbs: true
     position: relative;
     padding: 9px;
     border: 1px solid #fcfbfb;
-    border-radius: 9px;
     -webkit-background-clip: padding;
     background-clip: padding-box;
     background: #fcfbfb;
