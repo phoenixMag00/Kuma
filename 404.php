@@ -8,7 +8,7 @@
 
 		<div class="page">
     	
-			<img src="<?php bloginfo('template_directory'); ?>/library/images/404-fun-image-300-300.jpg" class="cute-dog" alt="Image for 404 Page" />
+			<img src="<?php bloginfo('template_directory'); ?>/library/images/404-fun-image-300-300.jpg" class="alignleft" alt="Image for 404 Page" />
 			
 				<h2>404 - Page Not Found</h2>
 			
