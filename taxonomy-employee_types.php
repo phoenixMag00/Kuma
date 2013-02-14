@@ -14,7 +14,8 @@
 			$terms = get_terms($taxonomy);
 			$parent_pages = get_pages(array(
 				'meta_key' => '_wp_page_template',
-				'meta_value' => 'faculty-staff-listing.php'
+				'meta_value' => 'faculty-staff-listing.php',
+				'hierarchical' => 0
 			));
 
 				if ($terms) {
