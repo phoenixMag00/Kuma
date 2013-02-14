@@ -197,7 +197,7 @@ body .section-container {
     width: 168px;
 }
 #parent-navigation li:hover > a,
-#parent-navigation ul ul :hover > a,
+#parent-navigation ul ul:hover > a,
 #parent-navigations li.sfHover,
 #parent-navigation ul ul .sfHover,
 #parent-navigation a:focus {
