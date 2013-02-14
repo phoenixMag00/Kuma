@@ -21,21 +21,25 @@ function my_scripts_method() {
        get_template_directory_uri() . '/library/js/kuma.js',
        array('jquery'),
        '1.0' );
-       
-   wp_register_script('hoverIntent',
-      get_template_directory_uri() . '/library/js/hoverIntent.js',
-      array('jquery'),
-      '1.0' );
    
    wp_register_script('superfish',
       get_template_directory_uri() . '/library/js/superfish.js',
       array('jquery'),
       '1.0' );
+      
+   wp_register_script('masonryInt',
+      get_template_directory_uri() . '/library/js/masonry-int.js',
+      array('jquery'),
+      '1.0', true);
+      
        
    // enqueue the script
    wp_enqueue_script('theme');
-   wp_enqueue_script('superfish');
    wp_enqueue_script('hoverIntent');
+   wp_enqueue_script('superfish');
+   wp_enqueue_script('jquery-masonry');
+   wp_enqueue_script('masonryInt');
+   
 }
 add_action('wp_enqueue_scripts', 'my_scripts_method');
 
