@@ -12,7 +12,7 @@ function the_superfish() {
 	jQuery('.menu > ul').superfish({
 		delay:       1, 		// one second delay on mouseout
 		speed:       1,			// faster animation speed
-		autoArrows:  false,		// disable generation of arrow mark-up
+		autoArrows:  true,		// disable generation of arrow mark-up
 		dropShadows: false		// disable drop shadows
 	});
 }
