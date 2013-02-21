@@ -29,7 +29,7 @@ function my_scripts_method() {
       
    wp_register_script('masonryInt',
       get_template_directory_uri() . '/library/js/masonry-int.js',
-      array('jquery'),
+      array('jquery-masonry'),
       '1.0', true);
       
        
@@ -37,7 +37,6 @@ function my_scripts_method() {
    wp_enqueue_script('theme');
    wp_enqueue_script('hoverIntent');
    wp_enqueue_script('superfish');
-   wp_enqueue_script('jquery-masonry');
    wp_enqueue_script('masonryInt');
    
 }

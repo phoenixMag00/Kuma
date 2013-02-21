@@ -1,4 +1,4 @@
-jQuery(document).ready(function($){
+(function($){
 	var $container = $('#masonry-boxes');
 		$container.imagesLoaded(function(){
 			$container.masonry({
@@ -6,9 +6,9 @@ jQuery(document).ready(function($){
 				
 				});
 			});
-		});
+		})(jQuery);
 
-jQuery(document).ready(function($){
+(function($){
 	var $container = $('.gallery');
 		$container.imagesLoaded(function(){
 			$container.masonry({
@@ -16,4 +16,4 @@ jQuery(document).ready(function($){
 				
 				});
 			});
-		});
+		})(jQuery);
