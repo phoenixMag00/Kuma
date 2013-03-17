@@ -53,7 +53,7 @@
 				
 										<?php 
 										
-											$ancestors = end($post->ancestors);
+											$ancestors = end( get_post_ancestors($post) );
 											$children = wp_list_pages("title_li=&child_of=".$ancestors."&echo=0");
 										 
 										 ?>
