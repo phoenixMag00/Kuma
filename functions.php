@@ -338,6 +338,24 @@ $options = get_option('kuma_theme_options');
 	); 
 }
 
+function set_custom_post_types_admin_order($wp_query) {
+  if (is_admin()) {
+
+    // Get the post type from the query
+    $post_type = $wp_query->query['post_type'];
+
+    if ( $post_type == 'homepage_slider') {
+
+      // 'orderby' value can be any column name
+      $wp_query->set('orderby', 'menu_order');
+
+      // 'order' value can be ASC or DESC
+      $wp_query->set('order', 'ASC');
+    }
+  }
+}
+add_filter('pre_get_posts', 'set_custom_post_types_admin_order');
+
 $options = get_option('kuma_theme_options');
 	if(isset($options['facstafflisting'])) {
 	
