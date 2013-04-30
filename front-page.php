@@ -13,7 +13,7 @@
 		
 			<div id="slider" class="nivoSlider kuma-theme">
 			
-				<?php query_posts('post_type=homepage_slider&posts_per_page=7&orderby=menu_order') ?>
+				<?php query_posts('post_type=homepage_slider&posts_per_page=7&orderby=menu_order&order=ASC') ?>
 				
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				
@@ -32,7 +32,7 @@
 	
 		</div>
 
-			<?php query_posts('post_type=homepage_slider&posts_per_page=7&orderby=menu_order') ?>
+			<?php query_posts('post_type=homepage_slider&posts_per_page=7&orderby=menu_order&order=ASC') ?>
 				
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				
