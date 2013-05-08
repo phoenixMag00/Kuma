@@ -34,7 +34,9 @@
 						
 							<?php if ($root_parent = get_the_title($grandparent) !== $root_parent = get_the_title($current)) : ?>
    					
-								<h3><a href="<?php echo get_permalink($grandparent) ?>"><?php echo get_the_title($grandparent); ?></a></h3>
+							<?php $oldest_ancestor = get_post_ancestors($post->ID); $oldest_id = end($oldest_ancestor) ;  ?>
+		
+								<h3><a href="<?php echo get_permalink($oldest_id) ?>"><?php echo get_the_title($oldest_id); ?></a></h3>
    					
 							<?php else: ?>
 				
