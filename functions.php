@@ -21,7 +21,7 @@ function my_scripts_method() {
    wp_register_script('theme',
        get_template_directory_uri() . '/library/js/kuma.js',
        array('jquery'),
-       '1.1.3' );
+       '1.2' );
    
    wp_register_script('superfish',
       get_template_directory_uri() . '/library/js/superfish.js',
