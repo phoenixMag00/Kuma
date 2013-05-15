@@ -1,4 +1,5 @@
 <?php 
+
 // Call theme options early, we are going to need them!
 require_once ( get_template_directory() . '/theme-options.php' );
 
