@@ -20,17 +20,17 @@ function my_scripts_method() {
    wp_register_script('theme',
        get_template_directory_uri() . '/library/js/kuma.js',
        array('jquery'),
-       '1.0' );
+       '1.1.3' );
    
    wp_register_script('superfish',
       get_template_directory_uri() . '/library/js/superfish.js',
       array('jquery'),
-      '1.0' );
+      '1.7.2' );
    
    wp_register_script('superfishInit',
       get_template_directory_uri() . '/library/js/superfish-init.js',
       array('jquery'),
-      '1.0', true );
+      '1.1', true );
       
    wp_register_script('masonryInt',
       get_template_directory_uri() . '/library/js/masonry-int.js',
