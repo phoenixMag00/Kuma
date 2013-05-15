@@ -351,7 +351,14 @@ body .section-container {
 #child-navigation .current_page_item .children,
 #child-navigation .current_page_ancestor .children,
 #child-navigation .current_page_parent .children { display: block }
-#child-navigation .has-children > a:after { content: ' \2192' }
+#child-navigation .has-children > a:after {
+    background: url(../images/has-children-8x4.png) no-repeat;
+    background-position: 5px 50%;
+    width: 15px;
+    height: 10px;
+    display: inline-block;
+    content: '';
+}
 #content-left {
     float: left;
     width: 690px;
