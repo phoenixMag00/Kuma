@@ -233,39 +233,37 @@ body .section-container {
 }
 /*** arrows (for all except IE7) **/
 .sf-arrows .sf-with-ul {
-	padding-right: 2.5em;
-	*padding-right: 1em; /* no CSS arrows for IE7 (lack pseudo-elements) */
+    padding-right: 2.5em;
+    *padding-right: 1em; /* no CSS arrows for IE7 (lack pseudo-elements) */
 }
 /* styling for both css and generated arrows */
 .sf-arrows .sf-with-ul:after {
-	content: '';
-	position: absolute;
-	top: 50%;
-	right: .3em;
-	margin-top: -3px;
-	height: 0;
-	width: 0;
-	/* order of following 3 rules important for fallbacks to work */
-	border: 5px solid transparent;
-	border-top-color: #eee; /* edit this to suit design (no rgba in IE8) */
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: .4em;
+    margin-top: -3px;
+    height: 0;
+    width: 0;
+    /* order of following 3 rules important for fallbacks to work */
+    border: 4px solid transparent;
+    border-top-color: #eee; /* edit this to suit design (no rgba in IE8) */
 }
 .sf-arrows > li > .sf-with-ul:focus:after,
 .sf-arrows > li:hover > .sf-with-ul:after,
 .sf-arrows > .sfHover > .sf-with-ul:after {
-	border-top-color: white; /* IE8 fallback colour */
+    border-top-color: #3c3f41; /* IE8 fallback colour */
 }
 /* styling for right-facing arrows */
 .sf-arrows ul .sf-with-ul:after {
-	margin-top: -5px;
-	margin-right: -3px;
-	border-color: transparent;
-	border-left-color: #3c3f41; /* edit this to suit design (no rgba in IE8) */
+    margin-top: -5px;
+    margin-right: -3px;
+    border-color: transparent;
+    border-left-color: #3c3f41; /* edit this to suit design (no rgba in IE8) */
 }
-.sf-arrows ul li > .sf-with-ul:focus:after,
-.sf-arrows ul li:hover > .sf-with-ul:after,
-.sf-arrows ul .sfHover > .sf-with-ul:after {
-	border-left-color: white;
-}
+.sf-arrows > ul li > .sf-with-ul:focus:after,
+.sf-arrows > ul li:hover > .sf-with-ul:after,
+.sf-arrows > ul .sfHover > .sf-with-ul:after { border-top-color: #3c3f41 }
 #search-form-header label {
     display: none;
     text-indent: -9999px;
@@ -313,6 +311,7 @@ body .section-container {
     width: 200px;
     float: left;
     margin-top: 3px;
+    position: relative;
 }
 #child-navigation h3 a {
     font-family: oswald, arial, sans-serif;
@@ -331,6 +330,7 @@ body .section-container {
 #child-navigation ul li {
     margin: 15px 0;
     line-height: 160%;
+    position: relative;
 }
 #child-navigation ul li a {
     color: #3b3f41;
@@ -347,6 +347,11 @@ body .section-container {
     list-style-type: square;
 }
 #child-navigation .children li { margin: 8px 0 }
+#child-navigation .children { display: none }
+#child-navigation .current_page_item .children,
+#child-navigation .current_page_ancestor .children,
+#child-navigation .current_page_parent .children { display: block }
+#child-navigation .has-children > a:after { content: ' \2192' }
 #content-left {
     float: left;
     width: 690px;
@@ -910,7 +915,7 @@ a img.aligncenter {
     margin: 0 !important;
     padding: 0 4px 5px;
 }
-.sticky {font-weight: bold;}
+.sticky { font-weight: bold }
 /* Media Queries for HiDPI displays (ratio equal to or greater than 1.3) */
 @media only screen and (-moz-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3) { 
 	#mason-logo {

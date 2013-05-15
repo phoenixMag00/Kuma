@@ -2,6 +2,7 @@
 jQuery(document).ready(function() {
 	jQuery("#parent-navigation ul li:last-child").addClass("extra-border");
 	jQuery("#parent-navigation ul ul li:last-child").removeClass("extra-border");
+	jQuery("#child-navigation li:has(ul)").addClass("has-children");
 	jQuery("#employee-types li:last-child a").addClass("last-employee-type");
 	jQuery("#footer-right h5:nth-child(n+6) a").addClass("second-icon-row");
 	
