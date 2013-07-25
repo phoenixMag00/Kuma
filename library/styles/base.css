@@ -831,8 +831,8 @@ body .section-container {
     height: 37px;
     background: url(../images/footer-social-media-sprite-35-274.png) no-repeat;
 }
-#instagram { background-position: 0 1px }
-#linkedIn { background-position: 0 41px }
+#instagram { background-position: 0 -1px }
+#linkedIn { background-position: 0 -39px }
 #foursquare { background-position: 0 -79px }
 #pinterest { background-position: 0 -119px }
 #youtube { background-position: 0 -158px }
