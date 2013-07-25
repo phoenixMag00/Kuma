@@ -145,6 +145,13 @@ function theme_options_do_page() {
 					</td>
 				</tr>
 				
+				<tr valign="top"><th scope="row"><?php _e( 'Instagram Icon Link', 'kumatheme' ); ?></th>
+					<td>
+						<input id="kuma_theme_options[instagramlink]" class="regular-text" type="text" name="kuma_theme_options[instagramlink]" value="<?php esc_attr_e( $options['instagramlink'] ); ?>" />
+						<label class="description" for="kuma_theme_options[instagramlink]"><?php _e( 'Should look something like http://instagram.com/{username}', 'kumatheme' ); ?></label>
+					</td>
+				</tr>
+				
 			</table>
 
 			<p class="submit">

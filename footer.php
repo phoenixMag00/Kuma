@@ -64,6 +64,13 @@
 			
 			<?php endif; ?>
 	
+	
+			<?php if ($options['instagramlink']) : ?>
+			
+				<h5><a href="<?php echo $options['instagramlink'] ?>" target="_blank" id="instagram" class="the-social-network text-swap">Follow Us on Instagram</a></h5>
+			
+			<?php endif; ?>
+
 		</div>
 	
 	</div>

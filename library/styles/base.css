@@ -831,13 +831,14 @@ body .section-container {
     height: 37px;
     background: url(../images/footer-social-media-sprite-35-274.png) no-repeat;
 }
-#linkedIn { background-position: 0 1px }
-#foursquare { background-position: 0 -39px }
-#pinterest { background-position: 0 -79px }
-#youtube { background-position: 0 -118px }
-#twitter { background-position: 0 -158px }
-#facebook { background-position: 0 -198px }
-#mobile-mason { background-position: 0 -238px }
+#instagram { background-position: 0 1px }
+#linkedIn { background-position: 0 41px }
+#foursquare { background-position: 0 -79px }
+#pinterest { background-position: 0 -119px }
+#youtube { background-position: 0 -158px }
+#twitter { background-position: 0 -198px }
+#facebook { background-position: 0 -238px }
+#mobile-mason { background-position: 0 -278px }
 .second-icon-row { margin-top: 6px }
 /* =WordPress Core
 -------------------------------------------------------------- */
