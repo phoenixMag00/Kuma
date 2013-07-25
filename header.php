@@ -66,9 +66,9 @@
 								<label for="search-header">Search</label>
 								<input type="text" value="Search Mason" name="q" id="search-header" onfocus="clearValue(this)" />
 								<input type="submit" id="go-button-header" value="Search"  />
-								<input type="hidden" name="site" value="mason_test" />
-								<input type="hidden" name="client" value="mason_test" />
-								<input type="hidden" name="proxystylesheet" value="mason_test" />
+								<input type="hidden" name="site" value="mason" />
+								<input type="hidden" name="client" value="mason" />
+								<input type="hidden" name="proxystylesheet" value="mason" />
 								<input type="hidden" name="output" value="xml_no_dtd" />
 								<input type="hidden" name="as_dt" value="i" />
 							
