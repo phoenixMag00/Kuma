@@ -148,7 +148,7 @@ register_sidebar(array(
 	
 	'name' => 'Homepage Sidebar Widgets',
 	
-	'before_widget' => '<div class="text-box">',
+	'before_widget' => '<div class="text-box" id="%1$s">',
 	
 	'after_widget' => '</div>',
 	
@@ -166,7 +166,7 @@ register_sidebar(array(
 	
 	'name' => 'Homepage Bottom Widgets',
 	
-	'before_widget' => '<div class="text-box homepage-bottom-single-box masonry-single-box">',
+	'before_widget' => '<div class="text-box homepage-bottom-single-box masonry-single-box" id="%1$s">',
 	
 	'after_widget' => '</div>',
 	
@@ -184,7 +184,7 @@ register_sidebar(array(
 	
 	'name' => 'Blog Homepage Widgets',
 	
-	'before_widget' => '<div class="text-box">',
+	'before_widget' => '<div class="text-box" id="%1$s">',
 	
 	'after_widget' => '</div>',
 	
@@ -202,7 +202,7 @@ register_sidebar(array(
 	
 	'name' => 'Page Widgets',
 	
-	'before_widget' => '<div class="text-box">',
+	'before_widget' => '<div class="text-box" id="%1$s">',
 	
 	'after_widget' => '</div>',
 	
@@ -220,7 +220,7 @@ register_sidebar(array(
 	
 	'name' => 'Post Widgets',
 	
-	'before_widget' => '<div class="text-box">',
+	'before_widget' => '<div class="text-box" id="%1$s">',
 	
 	'after_widget' => '</div>',
 	
@@ -238,7 +238,7 @@ register_sidebar(array(
 	
 	'name' => 'Archive Widgets',
 	
-	'before_widget' => '<div class="text-box">',
+	'before_widget' => '<div class="text-box" id="%1$s">',
 	
 	'after_widget' => '</div>',
 	
