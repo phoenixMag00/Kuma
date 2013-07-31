@@ -35,7 +35,7 @@
 <?php else: ?>
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/styles/widget-color-sets/tan.css" type="text/css" media="screen" />
 <?php endif; ?>
-<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>?ver=<?php $kuma_version = wp_get_theme(); echo $kuma_version->Version; ?>" type="text/css" media="screen" />
 <!--[if IE 7]>
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/styles/ie7.css" type="text/css" media="screen" />
 <![endif]--> 
