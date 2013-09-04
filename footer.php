@@ -76,7 +76,7 @@
 	</div>
 
 </div>
-<?php if ( is_front_page() ) : ?>
+<?php if ( is_front_page() or is_home() ) : ?>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/library/js/jquery.nivo.slider.pack.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/library/js/jquery.mobile.custom.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/library/js/nivo-int.js"></script>

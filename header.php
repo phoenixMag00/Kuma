@@ -26,7 +26,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/styles/base.css?ver=<?php $kuma_version = wp_get_theme(); echo $kuma_version->Version; ?>" media="screen" />
-<?php if ( is_front_page() ) : ?>
+<?php if ( is_front_page() or is_home() ) : ?>
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/styles/nivo-slider.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/styles/slider-kuma-theme.css" type="text/css" media="screen" />
 <?php endif; ?>
